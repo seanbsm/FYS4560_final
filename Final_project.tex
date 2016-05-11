@@ -1,0 +1,145 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage[cm]{fullpage}
+\usepackage{comment}
+\usepackage[pdftex]{graphicx}
+%\usepackage{GFS artemisia}
+%\usepackage{verbatim}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{bm}
+%\usepackage{sbbm}
+\usepackage{float}
+\usepackage{mathtools}
+%\usepackage{subfigure}
+\usepackage{fancyhdr}
+\usepackage{simplewick}
+\usepackage{slashed}
+\usepackage{xfrac}
+%\usepackage{tikz-feynman}
+
+\usepackage[pass]{geometry}
+%\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% % % Pagestyling
+\pagestyle{fancy}
+\fancyhf{}
+\headsep = 25pt
+% % %
+
+
+% % % New commands
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\down}{\Big|\frac{1}{2}\:-\frac{1}{2}\Big\rangle}
+\newcommand{\up}{\Big|\frac{1}{2}\:\:\:\:\frac{1}{2}\Big\rangle}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\bpm}{\begin{pmatrix}}
+\newcommand{\epm}{\end{pmatrix}}
+
+% % % Nice column vectors
+\makeatletter
+\newcommand{\Spvek}[2][r]{%
+	\gdef\@VORNE{1}
+	\left(\hskip-\arraycolsep%
+	\begin{array}{#1}\vekSp@lten{#2}\end{array}%
+	\hskip-\arraycolsep\right)}
+
+\def\vekSp@lten#1{\xvekSp@lten#1;vekL@stLine;}
+\def\vekL@stLine{vekL@stLine}
+\def\xvekSp@lten#1;{\def\temp{#1}%
+	\ifx\temp\vekL@stLine
+	\else
+	\ifnum\@VORNE=1\gdef\@VORNE{0}
+	\else\@arraycr\fi%
+	#1%
+	\expandafter\xvekSp@lten
+	\fi}
+\makeatother
+% % %
+
+% % %
+
+\renewcommand*\thesubfigure{\arabic{subfigure}}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\arabic{enumii}.}
+\renewcommand{\labelenumiii}{\theenumiii}
+\renewcommand{\theenumiii}{\arabic{enumiii}.}
+
+% % % Enables Matlab-scipt import
+\lstset{
+        language=Matlab,                            
+        numbers=left,                               
+        numberstyle=\footnotesize,                  
+        stepnumber=1,                               
+        numbersep=5pt,                              
+        showspaces=false,                           
+        showstringspaces=false,                     
+        showtabs=false,                             
+        breaklines=true,                            
+        breakatwhitespace=false,
+        frame=single,
+        commentstyle=\color{green},
+        keywordstyle=\color{blue},
+        escapeinside={\%*}{*)}  }
+% % %
+
+\begin{document}
+
+% % % Titlepage start
+\begin{titlepage}
+\begin{center}
+\medskip
+\textsc{\LARGE FYS4560;}\\[0.3cm]
+\textsc{\Large Elementary Particle Physics}\\[1.5cm]
+
+\textsc{\Large Final Project}\\[0.5cm]
+
+\HRule \\[1.0cm]
+\textmd{ \huge Higher Dimensions; \\ \LARGE Theoretical and Experimental Aspects \\[0.4cm] }
+\HRule \huge \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{center}
+\large\textsc{Sean B.S. Miller}\\
+
+\end{center}
+\end{minipage}
+
+\vfill
+
+{\large \today}
+
+\end{center}
+\end{titlepage}
+% % % Titlepage end
+
+\newpage
+
+\fancyhead[L]{\textsc{Final Project}}
+\fancyhead[C]{\textsc{\today}}
+\fancyhead[R]{\textsc{Sean B.S. Miller}}
+\fancyfoot[C]{\thepage}
+
+\section{Introduction}
+There are \emph{many} theories for higher, or extra, dimensions. The most recognised are:
+\begin{itemize}
+	\item \emph{Large extra dimensions}: The theory connected to the often-heard theory that gravity acts through several dimensions, therefore becoming weaker. It originates from the ADD model as an attempt to solve the hierarchy problem\footnote{The "hierarchy problem" is the problem in explaining why gravity and the weak force are so weak compared to QED and QCD.}.
+	\item \emph{Warped extra dimensions}: Describing our universe as a five-dimensional anti-de Sitter space, and claiming the SM particles are localized on a (3 + 1)-dimensional brane(s).
+	\item \emph{Universal extra dimensions}: -
+	\item \emph{Multiple time dimensions}: As the name implies, one increases the number of time dimensions. These theories have to deal with the problem of causality, to quote Wikipedia.
+\end{itemize}
+
+Obviously, a thorough description of any of these models is near impossible for such a small paper, let alone all the models together. Therefore, a brief outline of the theory behind the two currently most promising\footnote{"Promising" in the sense that they provide measurable outcomes, and fit very well with what we already know from the standard model.} models will be given. The first is the large extra dimension model by Arkani-Hamed, Dimopoulos, and Dvali (ADD). Originally, it was proposed as a model to explain the hierarchy problem (why the weak force is $10^{32}$ times stronger than gravity, among other problems). The extra dimension(s)\footnote{Today, 6 dimensions is the most common expansion.} are then suggested as planes into which gravity, assumed just as strong as the other forces, spreads. Therefore gravity becomes "diluted", while the known SM particles stay in (1,3)-spacetime.\\
+The second model is the warped extra dimension model by Randall and Sundrum (RS). They assumed that, rather than having large extra dimensions into which gravity seeps,  there are small extra dimensions
+
+\section{The standard model's plane(s) of existence}
+The standard model has it's roots in quantum field theory; a relativistic description of quantum particles and their interactions. The particles therefore exist in flat, Minkowski space.
+
+\end{document}
