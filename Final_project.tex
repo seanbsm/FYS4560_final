@@ -147,11 +147,65 @@ The second model is the warped extra dimension model by Randall and Sundrum (RS)
 A question that then springs to mind is why exactly gravitons and extra dimensions are connected (other than gravitons "carrying" gravity). If the standard model is expanded, but without inclusion of extra dimensions, to include a graviton field, then measuring it would be, at best, very optimistic\footnote{Refer to "Can Gravitons be Detected?" by Rothman and Boughn (https://arxiv.org/pdf/gr-qc/0601043v3.pdf) for an impression of the problem.}.
 Should any extra dimensional model be true, it would certainly be desirable to prove it by measurement. Finding a particle with the properties of the graviton would mean that at least \emph{some} extra dimensions model is true.
 
-\section{A brief on Kaluza-Klein theory}
+\section{Kaluza-Klein theory}
+The reason Kaluza-Klein theory is discussed is because one requires knowledge of the so-called "Kaluza-Klein towers"; massive excitations of an expansion model\footnote{This expansion depends on the model, and is where RS and ADD differ.} of the spacetime metric.\\
+As already mentioned, one, or several, extra spatial dimension(s) is assumed, but only one extra will be considered for the sake of simplicity. This means that the spacetime metric goes "up in size", i.e.
 
+\begin{equation}
+	\tilde{g}_{ab}(x,\theta) ) = 
+	\begin{pmatrix}
+		g_{\mu\nu}(x,\theta)-B_\mu(x,\theta) B_\nu(x,\theta) \Phi(x,\theta) & B_\mu(x,\theta)\Phi(x,\theta)\\
+		B_\nu(x,\theta)\Phi(x,\theta) & -\Phi(x,\theta)
+	\end{pmatrix}
+\end{equation}
+
+where
+\begin{itemize}
+	\item Latin indices represent all dimensions, greek indices represent 4-dimensional spacetime.
+	\item $g_{\mu\nu}$ is the 4-dimensional spacetime metric from before.
+	\item $B_\mu$ is a gauge field, defined by $B_\mu \equiv \frac{g_{\mu5}}{g_{55}}$
+	\item $\Phi$ is a scalar field, defined by $\Phi = g_{55}$.
+	\item $x$ are the normal spacetime coordinates, while $\theta$ is the extra coordinate. The notation is due to the extra dimension(s) often being "circular" (such as the $S^1$ space).
+\end{itemize}
+
+As can be seen, a complete description depends on $g_{\mu5}$ and $g_{55}$. However, this is precisely where the complication of extra dimensions arises. The metric depends on the space, and the shape of the space is what we do not know\footnote{This is why the field of extra dimensions can be so large and complex, as there are \emph{many} ways to guess at a shape of the new dimension(s), and each model gives a characteristic outcome which must fit experiments at, for example, the LHC.}. \\
+Firstly, consider a simple model with a massive scalar field $\hat{\phi}(x,\theta)$,
+
+\begin{equation}
+	S_5 = \int dx^4 d\theta \sqrt{-\tilde{G}}\left(-\frac{1}{2}(\partial_ a\hat{\phi})(\partial^a\hat{\phi})^\dagger - \frac{m^2}{2}\hat{\phi}^2 - \frac{c_5}{4!}\hat{\phi}^4\right)
+	\label{eq:KKaction}
+\end{equation}
+
+where $\tilde{G} \equiv \det(\tilde{g}_{ab})$ and $c_5$ is some coupling constant we do not yet know. The scalar field can be Fourier expanded as
+
+\begin{equation}
+	\hat{\phi}(x,\theta) = \sum_{\substack{n=\{n_1,n_2,\ldots,n_5\}; \\ n_i\in\mathbb{Z}\:\forall\:i}} \phi{(n)}(x)Y_n(\theta)
+\end{equation}
+
+where $Y_n(\theta)$ are orthogonal, normalized eigenfuntions of the Laplace operator on the internal space\footnote{The extra dimension/space, denoted $K_d$.}:
+
+\begin{equation}
+	\Delta_{K_d}Y_n(\theta) = \frac{\lambda_n}{R^2}Y_n(\theta)
+\end{equation}
+
+where $R$ is the "characteristic size" of the space $K_d$ (obviously a radius in the case of circular objects). Inserting this into equation \ref{eq:KKaction} and performing the integral over $K_d$ gives
+
+\begin{align}
+	\begin{split}
+	S_5 = \int dx^4 \sqrt{-\tilde{G}}\bigg(&-\frac{1}{2}(\partial_ \mu\phi^{(0)})(\partial^\mu\phi^{(0)})^\dagger - \frac{m^2}{2}\left(\phi^{(0)}\right)^2\\
+	& - \sum_{n\neq0} \left[(\partial_ \mu\phi^{(n)})(\partial^\mu\phi^{(n)})^\dagger + m_n^2\phi^{(n)}\phi^{(n)\dagger}\right]\\
+	& - \frac{c_5}{4!}\left(\phi^{(0)}\right)^4 - \frac{c_5}{4}\left(\phi^{(0)}\right)^2\sum_{n\neq0} \phi^{(n)}\phi^{(n)\dagger} - \ldots\bigg),
+	\end{split}
+\end{align}
+
+and by comparison one sees $m_n^2 = m^2 + \frac{\lambda_n}{R^2}$. The dots represent all terms without any $\phi^{(0)}$-coefficients. As one sees, there is an infinite number of masses, since there is an infinite number of eigenvalues; a mathematical problem without any current answer. The hope is that these modes\footnote{The infinite set of which is called the Kaluza-Klein tower of modes. (Often one hears of KK towers.)} can be tied to the graviton, and will be explained better in the following sections.
 
 \section{The Arkani-Hamed-Dimopoulos-Dvali model}
+In the ADD model, the standard metric is expanded upon by introducing a field $\hat{h}_{ab}(x,\theta)$ such that:
 
+\begin{equation}
+	\tilde{g}_{ab}(x,\theta) = \eta_{ab} + \frac{2}{M^{1+d/2}}\hat{h}_{ab}(x,\theta)
+\end{equation}
 
 \section{The Randall-Sundrum model}
 
