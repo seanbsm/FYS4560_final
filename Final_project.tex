@@ -198,16 +198,93 @@ where $R$ is the "characteristic size" of the space $K_d$ (obviously a radius in
 	\end{split}
 \end{align}
 
-and by comparison one sees $m_n^2 = m^2 + \frac{\lambda_n}{R^2}$. The dots represent all terms without any $\phi^{(0)}$-coefficients. As one sees, there is an infinite number of masses, since there is an infinite number of eigenvalues; a mathematical problem without any current answer. The hope is that these modes\footnote{The infinite set of which is called the Kaluza-Klein tower of modes. (Often one hears of KK towers.)} can be tied to the graviton, and will be explained better in the following sections.
+and by comparison one sees $m_n^2 = m^2 + \frac{\lambda_n}{R^2}$. The dots represent all terms without any $\phi^{(0)}$-coefficients. As one sees, there is an infinite number of masses, since there is an infinite number of eigenvalues; a mathematical problem without any current answer. The hope is that these modes\footnote{The infinite set of which is called the Kaluza-Klein tower of modes. (Often one hears of KK towers.)} can be tied to the graviton, and will be explained better in the following sections.\\
+
+A relation that will be of importance later is the reduction formula:
+
+\begin{equation}
+	M_{Pl}^2 = V_dM^{d+2}
+\end{equation}
+
+where $M_{Pl} = G_{N(4)}^{-1/2}$ is the 4-dimensional Planck mass and $M^{d+2} = G_{N(4+d)}^{-1/(4+d)}$ is the fundamental mass scale in the new model. The relation is derived by demanding the Einstein-Hilbert action to be the same with and without the new dimension(s)\footnote{This is because the new dimension(s) must reproduce what we observe, and 4D spacetime fits very well with observations.}, and performing the integrals by using KK mode expansion on the integrand. I.e one demands:
+
+\begin{equation}
+	S_{E(4)} = S_{E(d+4)}
+\end{equation}
+
+where
+
+\begin{equation}
+	S_{E(D)} = \int d^D x\sqrt{-G_D} \frac{1}{16\pi G_{N(D)}}\mathcal{R}^{D}(G_{ab})
+\end{equation}
 
 \section{The Arkani-Hamed-Dimopoulos-Dvali model}
+The ADD model is mainly based on 3 features:
+
+\begin{itemize}
+	\item There exists $n$ new spatial compact dimensions, with compactification volume $V_n$.
+	\item The Planck scale is very low, at the order of one TeV,
+	\item The SM degrees of freedom are localized on a 3D-brane, stretching along 3 non-compact spatial dimensions (i.e. the SM particles move in normal spacetime, not in the new dimension(s)).
+\end{itemize}
+
 In the ADD model, the standard metric is expanded upon by introducing a field $\hat{h}_{ab}(x,\theta)$ such that:
 
 \begin{equation}
 	\tilde{g}_{ab}(x,\theta) = \eta_{ab} + \frac{2}{M^{1+d/2}}\hat{h}_{ab}(x,\theta)
 \end{equation}
 
+
+
 \section{The Randall-Sundrum model}
+\subsection{The hierarchy problem in RS1}
+The RS model assumes that there are two points on the $S^1/\mathbb{Z}^2$ ordibfold in which 3-branes are compactified. What this means is that there are two 3-dimensional, non-compact branes that are connected at every point by a "circle", see figure SOME FIG.\\
+
+
+
+The two branes, 1 and 2, are located on points $\theta = 0$ and $\theta = \pi$, which means the branes are seperated by a distance $2L = 2R$, where $R$ is the circle radius.\\
+As mentioned, the model set out to explain the hierarchy problem, and will be briefly explained how below. Firstly, the action of the model is given by the sum of the Hilbert-Einstein action and the matter "part":
+
+\begin{equation}
+	S_5 = S_E + S_M = \int d^4x \int_{-L}^{L} dy \sqrt{-\tilde{G}}(M^3\mathcal{R}_5 - \Lambda_5)
+\end{equation}
+
+where $\Lambda_5$ is the five dimensional cosmological constant. In order to match real world observations, the new metric must uphold Poinecaré invariance, which can be shown to lead to:
+
+\begin{equation}
+	ds^2 = e^{-2A(y)}\eta_{\mu\nu}dx^\mu dx^\nu + dy^2
+	\label{eq:RS_lineelement}
+\end{equation}
+
+where $A(y)$ is called the \emph{warp factor}. Solving the Einstein equations lets one find that $A(y) = \pm ky$, where $k \equiv \sqrt{\frac{-\Lambda}{12M^3}}$ is a constant. Since the orbifold abides $\mathbb{Z}^2$ symmetry, $A(y) = A(-y) \:\rightarrow\: A(y) = k|y|$.\\
+There is a problem with action above, which is that it does not include the energy densities of the two branes, that are:
+
+\begin{align}
+	S_1 &= \int_{B_1}\int_{S^1/\mathbb{Z}^2}d^4xdy \sqrt{-\tilde{G}(x,y)}\lambda_1\delta(y)\\
+	S_2 &= \int_{B_2}\int_{S^1/\mathbb{Z}^2}d^4xdy \sqrt{-\tilde{G}(x,y)}\lambda_2\delta(y-L)
+\end{align}
+
+where $\tilde{G}(x,0) = G_1$ and $\tilde{G}(x,L) = G_2$ have been used. So, the total action for the space is $S = S_E+S_M+S_1+S_2$. To fulfil the Einstein equations, one needs to impose $\lambda_1 = -\lambda_2 = 12kM^3$. THINK ON THIS
+
+\subsection{KK mode expansion/Finding gravitons}
+Much in the same manner as for QED and other gauge theories, one can create gravitational bosons. This means doing a metric transform, given by:
+
+\begin{equation}
+	ds^2 = e^{-2k|y|}(\eta_{\mu\nu} + \tilde{h}_{\mu\nu}(x,y))dx^\mu dx^\nu + (1+\phi(x))dy^2
+\end{equation}
+
+NOTE THE ROTATION OF LAGRANGIAN $\tilde{h}\rightarrow h$\\
+Then, a KK mode expansion is done on $h_{\mu\nu}(x,y)$, giving
+
+\begin{equation}
+	h_{\mu\nu}(x,y) = \sum_{n=0}^{\infty} h_{\mu\nu}^{(n)}(x)\frac{\chi_n(y)}{R},
+\end{equation}
+
+where $\chi_0(y) = 2\sqrt{kR}e^{-2k|y|}$ and
+
+\begin{equation}
+	\chi_n(y) = N_n\left[ C_1Y_2\left(\frac{m_n}{k}e^{k|y|}\right) +   C_2J_2\left(\frac{m_n}{k}e^{k|y|}\right)\right] \quad,\quad n\neq 0
+\end{equation}
+
 
 
 \section{Graviton production at the LHC}

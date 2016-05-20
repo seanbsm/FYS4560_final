@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.27)  18 MAY 2016 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.27)  20 MAY 2016 15:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1290,6 +1290,10 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [1]
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 13.59999pt.
@@ -1297,18 +1301,29 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] (./Final_project.aux) ) 
+[3]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4] (./Final_project.aux) ) 
 Here is how much of TeX's memory you used:
- 23262 strings out of 495020
- 445283 string characters out of 6181323
+ 23264 strings out of 495020
+ 445310 string characters out of 6181323
  508206 words of memory out of 5000000
- 26075 multiletter control sequences out of 15000+600000
+ 26077 multiletter control sequences out of 15000+600000
  25324 words of font info for 92 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,18n,54p,10424b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1331,10 +1346,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Final_project.pdf (4 pages, 212927 bytes).
+Output written on Final_project.pdf (5 pages, 229814 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
