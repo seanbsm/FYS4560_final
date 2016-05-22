@@ -1,0 +1,46 @@
+
+Current plan:
+-An introduction where; I explain why extra dimensions (ED) is an 
+ attractive theory (makes it possible to measure graviton AND fits with 
+ current models), which ED models will be considered in this report, a 
+ short (a few lines) history of ED models.
+
+-Start by briefly discussing the various models for extra dimensions: 
+ large extra dim, warped extra dim, and universal extra dim
+
+-In order to explain RS and ADD, I will need a chapter on Kaluza-Klein
+ (KK) theory. Mostly to explain KK towers and their connection to the 
+ graviton. Perhaps, in addition, explain why the graviton must have
+ spin-2.
+
+-A chapter on RS and one on ADD, both in which I try to explain how the
+ theories "look" at the graviton, besides explaining the theories and
+ their assumptions.
+
+-After the theory-part, I want to get an idea of the uniqueness of
+ graviton measurements (different CS, FB asymmetry, ...) by calculating
+ the simplest proton-proton graviton production; qqbar -> G -> l+l-. 
+ This would be nice since we've done this for the Higgs boson, and can 
+ therefore compare plots.
+
+-I would like to make use of CompHep, but I'm unsure exactly what I
+ achieve in the given timespan. I haven't included anything in the
+ abstract of this, since I want the simulation to fit nicely with the
+ theory, but I don't know enough yet to say anything about it.
+
+-Discuss current search program for the graviton at the LHC, possibly 
+ future plans.
+
+-A conclusion.
+
+
+
+Current abstract:
+ -Two of the most promising theories for extra dimensions, the 
+  Randall-Sundrum (RS) and Arkani-Hamed-Dimopoulos-Dvali (ADD) models,
+  will be reviewed and their connection to the hypothesized graviton
+  boson will be studied. Quark-anti-quark annihilation into dilepton 
+  final state by the simplest possible massive graviton propagator (
+  1st order tower of Kaluza-Klein excitations) will be calculated.
+  Lastly, the current extra dimension search program at the LHC will be 
+  discussed.
