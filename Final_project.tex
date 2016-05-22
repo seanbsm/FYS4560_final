@@ -272,7 +272,7 @@ Much in the same manner as for QED and other gauge theories, one can create grav
 	ds^2 = e^{-2k|y|}(\eta_{\mu\nu} + \tilde{h}_{\mu\nu}(x,y))dx^\mu dx^\nu + (1+\phi(x))dy^2
 \end{equation}
 
-NOTE THE ROTATION OF LAGRANGIAN $\tilde{h}\rightarrow h$\\
+However, this means there will be cross-terms ($\phi \tilde{h}_{\mu\nu}$-terms) in the Lagrangian that prevent mass eigenstates. It can be shown\footnote{See \text{http://arxiv.org/abs/hep-th/0105304v3}, section 2, for a rigorous derivation.} that it can be diagonalized. One will end up with two fields, $h_{\mu\nu}$ and $\varphi$, which will be used hereafter.\\
 Then, a KK mode expansion is done on $h_{\mu\nu}(x,y)$, giving
 
 \begin{equation}
@@ -285,7 +285,7 @@ where $\chi_0(y) = 2\sqrt{kR}e^{-2k|y|}$ and
 	\chi_n(y) = N_n\left[ C_1Y_2\left(\frac{m_n}{k}e^{k|y|}\right) +   C_2J_2\left(\frac{m_n}{k}e^{k|y|}\right)\right] \quad,\quad n\neq 0
 \end{equation}
 
-While a bit of a mouthful, $\chi_n$ is just the $n$'th eigenfunction of the WHAT??, while $J_2$ and $Y_2$ are the Bessel functions of the first and second kind, respectively. The constants $C_1$ and $C_2$ can be determined by the boundary conditions on the vacuum energy terms of the energy-momentum tensor (the delta functions),
+While this seems out of the blue, this is the result of diagonalizing the Lagrangian, which is a rather intricate procedure. The functions $\chi_n$ are eigenfunction of an equation met during the diagonalising of the Lagrangian. $J_2$ and $Y_2$ are the Bessel functions of the first and second kind, respectively. The constants $C_1$ and $C_2$ can be determined by the boundary conditions on the vacuum energy terms of the energy-momentum tensor (the delta functions),
 
 \begin{equation}
 	T_{ab} = \lambda_1\sqrt{G_1}g_{\mu\nu}^{(1)}\delta_a^\mu\delta_b^\nu\delta(y) + \lambda_2\sqrt{G_2}g_{\mu\nu}^{(2)}\delta_a^\mu\delta_b^\nu\delta(y-\pi R),
@@ -293,12 +293,10 @@ While a bit of a mouthful, $\chi_n$ is just the $n$'th eigenfunction of the WHAT
 
 which give $C_1 = Y_1\left(\frac{m_n}{k}\right)$ and $C_2 = -J_1\left(\frac{m_n}{k}\right)$ SOMETHING MORE HERE\\
 
-The $h_{\mu\nu}^{(0)}(x)$ field describes the massless graviton, while the $n\geq 1$ states are the massive KK modes.
+The $h_{\mu\nu}^{(0)}(x)$ field describes the massless graviton, while the $n\geq 1$ states are the massive KK modes, and finally $\varphi$ describes the massless \emph{radion}.
 
 \section{Graviton production at the LHC}
 
-
-\section{A simulated approach}
 
 
 \section{Conclusions}
