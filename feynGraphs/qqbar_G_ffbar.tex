@@ -1,0 +1,29 @@
+\documentclass{article}
+%\documentclass[varwidth=true, border={1.2cm 1.2cm 2cm 2cm}]{standalone}
+\usepackage{feynmp-auto}
+\usepackage[margin=1cm]{geometry}
+%\usepackage[layoutheight=55mm,layoutwidth=5mm,paperheight=54mm,paperwidth=109mm]{geometry}
+\begin{document}
+	\pagenumbering{gobble}
+	\unitlength = 1cm
+	\begin{figure*}[h]
+		\begin{fmffile}{d1}
+			\begin{fmfgraph*}(8,4)
+				\fmfleft{q2,q1}
+				\fmfright{lp,lm}
+				\fmf{dbl_dots,label=$G_n^{\mu\nu\rho\sigma}$,label.side=left}{v1,v2}
+				\fmf{fermion,label=$k_1$, label.side=right}{q2,v1}
+				\fmf{fermion,label=$k_2$, label.side=right}{v1,q1}
+				\fmf{fermion,label=$q_1$, label.side=left}{v2,lm}
+				\fmf{fermion,label=$q_2$, label.side=left}{lp,v2}
+				\fmfdotn{v1}{4}
+				\fmflabel{$\mu\nu$}{v1}
+				\fmflabel{$\rho\sigma$}{v2}
+				\fmflabel{$q$}{q2}
+				\fmflabel{$\bar{q}$}{q1}
+				\fmflabel{$f$}{lm}
+				\fmflabel{$\bar{f}$}{lp}
+			\end{fmfgraph*}
+		\end{fmffile}
+	\end{figure*}
+\end{document}

@@ -1,0 +1,68 @@
+This is MetaPost, version 1.999 (TeX Live 2015/dev/Debian) (kpathsea version 6.2.1dev)  30 MAY 2016 16:06
+**d1
+(/usr/share/texlive/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texlive/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./d1.mp
+(/usr/share/texmf/metapost/feynmf/feynmp.mp)
+feynmf: warning: disconnected and unspecified vertex `v1 1'.
+feynmf: warning: disconnected and unspecified vertex `v1 2'.
+feynmf: warning: disconnected and unspecified vertex `v1 3'.
+feynmf: warning: disconnected and unspecified vertex `v1 4'.
+feynmf: Have you seen the warning messages above?
+        They are usually caused by misspelling a vertex'
+        name and can trigger errors further below!
+        Fix the typos and run LaTeX and Metafont again.
+! feynmf: vertex `__v1 1' not determined, replaced by `(0,0)'..
+<to be read again> 
+                   ;
+<for(7)> ... determined, "&"replaced by `(0,0)'.";
+                                                  vlist[(EXPR0)]loc:=origin;...
+
+vdraw->...:vlist[i]decor.size=decor_size;fi.endfor
+                                                  .for.i=vertices:for.j=varc...
+l.25 vdraw
+          ;
+? 
+! Emergency stop.
+<to be read again> 
+                   ;
+<for(7)> ... determined, "&"replaced by `(0,0)'.";
+                                                  vlist[(EXPR0)]loc:=origin;...
+
+vdraw->...:vlist[i]decor.size=decor_size;fi.endfor
+                                                  .for.i=vertices:for.j=varc...
+l.25 vdraw
+          ;
+Your graph specification was not complete (probably a lone vertex).            
+Check logic and reprocess!our graph specification was not complete (probably a 
+lone vertex).            Check logic and reprocess!ur graph specification was n
+ot complete (probably a lone vertex).            Check logic and reprocess!r gr
+aph specification was not complete (probably a lone vertex).            Check l
+ogic and reprocess! graph specification was not complete (probably a lone verte
+x).            Check logic and reprocess!graph specification was not complete (
+probably a lone vertex).            Check logic and reprocess!raph specificatio
+n was not complete (probably a lone vertex).            Check logic and reproce
+ss!aph specification was not complete (probably a lone vertex).            Chec
+k logic and reprocess!ph specification was not complete (probably a lone vertex
+).            Check logic and reprocess!h specification was not complete (proba
+bly a lone vertex).            Check logic and reprocess! specification was not
+ complete (probably a lone vertex).            Check logic and reprocess!specif
+ication was not complete (probably a lone vertex).            Check logic and r
+eprocess!pecification was not complete (probably a lone vertex).            Che
+ck logic and reprocess!ecification was not complete (probably a lone vertex).  
+          Check logic and reprocess!cification was not complete (probably a lon
+e vertex).            Check logic and reprocess!ification was not complete (pro
+bably a lone vertex).            Check logic and reprocess!fication was not com
+plete (probably a lone vertex).            Check logic and reprocess!ication wa
+s not complete (probably a lone vertex).            Check logic and reprocess!c
+ation was not complete (probably a lone vertex).            Check logic and rep
+rocess!ation was not complete (probably a lone vertex).            Check logic 
+and reprocess!tion was not complete (probably a lone vertex).            Check 
+logic and reprocess!ion was not complete (probably a lone vertex).            C
+heck logic and reprocess!on was not complete (probably a lone vertex).         
+   Check logic and reprocess!n was not complete (probably a lone vertex).      
+      Check logic and reprocess! was not complete (probably a lone vertex).    
+        Check logic and reprocess!was not complete (probably a lone vertex).   
+         Check logic and reprocess!as not complete (probably a lone vertex).   
+         Check logic and reprocess!s not complete (probably a lone vertex).    
+        Check logi

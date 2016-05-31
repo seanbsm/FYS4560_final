@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.27)  24 MAY 2016 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.27)  31 MAY 2016 17:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1290,10 +1290,6 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 13.59999pt.
@@ -1301,7 +1297,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
@@ -1312,9 +1308,16 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
+
+<feynGraphs/qqbar_G_ffbar.pdf, id=38, 614.295pt x 794.97pt>
+File: feynGraphs/qqbar_G_ffbar.pdf Graphic file (type pdf)
+
+<use feynGraphs/qqbar_G_ffbar.pdf>
+Package pdftex.def Info: feynGraphs/qqbar_G_ffbar.pdf used on input line 358.
+(pdftex.def)             Requested size: 272.8613pt x 169.00899pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1322,15 +1325,29 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (./Final_project.aux) ) 
+[4]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./feynGraphs/qqbar_G_ffbar.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6] (./Final_project.aux) ) 
 Here is how much of TeX's memory you used:
- 23264 strings out of 495020
- 445310 string characters out of 6181323
- 508206 words of memory out of 5000000
- 26077 multiletter control sequences out of 15000+600000
+ 23279 strings out of 495020
+ 445581 string characters out of 6181323
+ 519206 words of memory out of 5000000
+ 26089 multiletter control sequences out of 15000+600000
  25324 words of font info for 92 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,18n,54p,10424b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,54p,10424b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/sean/.texmf-var/fonts/pk/ljfour/jknappen/ec/
 tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 bx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
@@ -1338,22 +1355,24 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Final_project.pdf (5 pages, 233059 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb>
+Output written on Final_project.pdf (7 pages, 262878 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 135 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

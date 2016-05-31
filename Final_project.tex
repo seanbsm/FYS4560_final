@@ -148,57 +148,104 @@ A question that then springs to mind is why exactly gravitons and extra dimensio
 Should any extra dimensional model be true, it would certainly be desirable to prove it by measurement. Finding a particle with the properties of the graviton would mean that at least \emph{some} extra dimensions model is true.
 
 \section{Kaluza-Klein theory}
-The reason Kaluza-Klein theory is discussed is because one requires knowledge of the so-called "Kaluza-Klein towers"; massive excitations of an expansion model\footnote{This expansion depends on the model, and is where RS and ADD differ.} of the spacetime metric.\\
-As already mentioned, one, or several, extra spatial dimension(s) is assumed, but only one extra will be considered for the sake of simplicity. This means that the spacetime metric goes "up in size", i.e.
+The reason Kaluza-Klein theory is discussed is because one requires knowledge of the so-called "Kaluza-Klein towers"; massive excitations of an expansion model\footnote{This expansion depends on the model, and is where RS and ADD differ.} of the spacetime metric. While RS1 only considers a single extra dimension, ADD works for different numbers of dimensions. However, for the sake of simplicity, and comparison, only one extra dimension will be considered.\\
+Before adding extra dimensions, the question of how get so-called "massive gravity"; a massive field carries the gravitational force. First, one starts with linearised gravity. Problems in general relativity can be approximated by perturbing Minkowski spacetime;
 
 \begin{equation}
-	\tilde{g}_{ab}(x,\theta) ) = 
-	\begin{pmatrix}
-		g_{\mu\nu}(x,\theta)-B_\mu(x,\theta) B_\nu(x,\theta) \Phi(x,\theta) & B_\mu(x,\theta)\Phi(x,\theta)\\
-		B_\nu(x,\theta)\Phi(x,\theta) & -\Phi(x,\theta)
+	g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}
+\end{equation}
+
+where $g_{\mu\nu}$ is the approximated spacetime metric, $\eta_{\mu\nu}$ is the Minkowski metric, and $h_{\mu\nu}$ is the perturbation, and is what eventually was suggested to be gravitons. The Lagrangian density will then have a interactive term on the form $h_{\mu\nu}T^{\mu\nu}$, and a kinetic term for $h_ {\mu\nu}$. The field $h_{\mu\nu}$ can be given mass by saying the Lagrangian density also has a term $ah_{\mu\nu}h^{\mu\nu} + b(\eta_{\mu\nu}h^{\mu\nu})^2$. Markus Fierz and Wolfgang Pauli then, in 1939, wrote an article\footnote{Fierz, Markus; Pauli, Wolfgang (1939). "On relativistic wave equations for particles of arbitrary spin in an electromagnetic field". Proc. Roy. Soc. Lond. A173: 211–232.} in which they proved that $a=-b$ in order to avoid unphysical results. The result is the Fierz-Pauli Lagrangian for massive gravity\footnote{Note that this is \emph{not} the only way to get a massive gravity Lagrangian, and it has some problems as well. It serves well as an introductory example, however.} [SOURCE]:
+
+\begin{equation}
+	\frac{1}{\kappa^2}\sqrt{|g|}R = \frac{1}{4}\left( \partial^\mu h^{\nu\rho}\partial_\mu h_{\nu\rho} - \partial^\mu h^{\nu}_{\nu}\partial_\mu h^\rho_{\rho} - 2\partial^\nu h_{\nu\mu}\partial_\rho h^{\rho\mu} + 2\partial_\nu h^{\nu\mu}\partial_\mu h^{\rho}_{\rho} \right) + \mathcal{O}(\kappa)
+	\label{eq:FierzPauli}
+\end{equation}
+
+Now, additional spatial dimensions may be added. These dimensions will not change the form of equation \ref{eq:FierzPauli}, so one can simply let indices change from greek to latin, i.e. $\mu\rightarrow a$, $\nu\rightarrow b$, etc..., where $a,b,\ldots \in \{4+d\}$. It is then assumed the perturbative field has a form
+
+\begin{equation}
+	\hat{h}_{ab} = 
+	V_d^{-1/2}\begin{pmatrix}
+	h_{\mu\nu} + \eta_{\mu\nu}\phi & A_{\mu i}\\
+	A_{\nu j} & 2\phi_{ij}
 	\end{pmatrix}
 \end{equation}
 
-where
-\begin{itemize}
-	\item Latin indices represent all dimensions, greek indices represent 4-dimensional spacetime.
-	\item $g_{\mu\nu}$ is the 4-dimensional spacetime metric from before.
-	\item $B_\mu$ is a gauge field, defined by $B_\mu \equiv \frac{g_{\mu5}}{g_{55}}$
-	\item $\Phi$ is a scalar field, defined by $\Phi = g_{55}$.
-	\item $x$ are the normal spacetime coordinates, while $\theta$ is the extra coordinate. The notation is due to the extra dimension(s) often being "circular" (such as the $S^1$ space).
-\end{itemize}
-
-As can be seen, a complete description depends on $g_{\mu5}$ and $g_{55}$. However, this is precisely where the complication of extra dimensions arises. The metric depends on the space, and the shape of the space is what we do not know\footnote{This is why the field of extra dimensions can be so large and complex, as there are \emph{many} ways to guess at a shape of the new dimension(s), and each model gives a characteristic outcome which must fit experiments at, for example, the LHC.}. \\
-Firstly, consider a simple model with a massive scalar field $\hat{\phi}(x,\theta)$,
+where $V_d$ is the volume of the compactified space, $\eta_{\mu\nu}\phi$ is a Weyl rescaling and $A_{\mu i}$ is some tensor field. Since the fields are compact, one can claim periodicity of the field, such that a Fourier expansions is possible:
 
 \begin{equation}
-	S_5 = \int dx^4 d\theta \sqrt{-\tilde{G}}\left(-\frac{1}{2}(\partial_ a\hat{\phi})(\partial^a\hat{\phi})^\dagger - \frac{m^2}{2}\hat{\phi}^2 - \frac{c_5}{4!}\hat{\phi}^4\right)
-	\label{eq:KKaction}
+	h_{\mu\nu}(x,y) = \sum_{\substack{n=\{n_1,n_2,\ldots,n_5\}; \\ n_i\in\mathbb{Z}\:\forall\:i}} h_{n,\mu\nu}(x)Y_n(y)
 \end{equation}
 
-where $\tilde{G} \equiv \det(\tilde{g}_{ab})$ and $c_5$ is some coupling constant we do not yet know. The scalar field can be Fourier expanded as
+where $Y_n(y)$ are orthogonal, normalized eigenfuntions of the Laplace operator on the internal space\footnote{The extra dimension/space, denoted $K_d$.}:
 
 \begin{equation}
-	\hat{\phi}(x,\theta) = \sum_{\substack{n=\{n_1,n_2,\ldots,n_5\}; \\ n_i\in\mathbb{Z}\:\forall\:i}} \phi{(n)}(x)Y_n(\theta)
+\Delta_{K_d}Y_n(\theta) = \frac{\lambda_n}{R^2}Y_n(\theta)
 \end{equation}
 
-where $Y_n(\theta)$ are orthogonal, normalized eigenfuntions of the Laplace operator on the internal space\footnote{The extra dimension/space, denoted $K_d$.}:
+where $R$ is the "characteristic size" of the space $K_d$ (tied to the volume $V_d$). This series expansion is called the Kalulza-Klein (KK) tower of modes, and one value of $n$ is called mode $n$, and the corresponding term the $n$'th excitation. The field $h_{\mu\nu}(x,y)$ has to satisfy the d'Alembert equation, and in doing this one finds it necessary to redefine the fields $h_{\mu\nu}(x,y)$, $A_{\nu j}$, and $\phi_{ij}$, to $\tilde{h}_{n,\mu\nu}$, $\tilde{A}_{n,\mu i}$, and $\tilde{\phi}_{n,ij}$. The detailed steps are omitted, as they are many and non-intuitive. These new fields, when put into the Lagrangian, will give mass eigenstates. This redefinition of fields can be thought of as an analogue to the rotations from the CKM matrix in QCD theory (needed for mass eigenstates in the Lagrangian), but it is not the same (not a rotation). From the equation of motion one can go one to show that the masses are:
 
 \begin{equation}
-	\Delta_{K_d}Y_n(\theta) = \frac{\lambda_n}{R^2}Y_n(\theta)
+	m_n^2 = \frac{4\pi^2 n^2}{R^2}
 \end{equation}
 
-where $R$ is the "characteristic size" of the space $K_d$ (obviously a radius in the case of circular objects). Inserting this into equation \ref{eq:KKaction} and performing the integral over $K_d$ gives
+%%%
+%\begin{equation}
+%	\tilde{g}_{ab}(x,\theta) ) = 
+%	\begin{pmatrix}
+%		g_{\mu\nu}(x,\theta)-B_\mu(x,\theta) B_\nu(x,\theta) \Phi(x,\theta) & B_\mu(x,\theta)\Phi(x,\theta)\\
+%		B_\nu(x,\theta)\Phi(x,\theta) & -\Phi(x,\theta)
+%	\end{pmatrix}
+%\end{equation}
+%
+%where
+%\begin{itemize}
+%	\item Latin indices represent all dimensions, greek indices represent 4-dimensional spacetime.
+%	\item $g_{\mu\nu}$ is the 4-dimensional spacetime metric from before.
+%	\item $B_\mu$ is a gauge field, defined by $B_\mu \equiv \frac{g_{\mu5}}{g_{55}}$
+%	\item $\Phi$ is a scalar field, defined by $\Phi = g_{55}$.
+%	\item $x$ are the normal spacetime coordinates, while $\theta$ is the extra coordinate. The notation is due to the extra dimension(s) often being "circular" (such as the $S^1$ space).
+%\end{itemize}
 
-\begin{align}
-	\begin{split}
-	S_5 = \int dx^4 \sqrt{-\tilde{G}}\bigg(&-\frac{1}{2}(\partial_ \mu\phi^{(0)})(\partial^\mu\phi^{(0)})^\dagger - \frac{m^2}{2}\left(\phi^{(0)}\right)^2\\
-	& - \sum_{n\neq0} \left[(\partial_ \mu\phi^{(n)})(\partial^\mu\phi^{(n)})^\dagger + m_n^2\phi^{(n)}\phi^{(n)\dagger}\right]\\
-	& - \frac{c_5}{4!}\left(\phi^{(0)}\right)^4 - \frac{c_5}{4}\left(\phi^{(0)}\right)^2\sum_{n\neq0} \phi^{(n)}\phi^{(n)\dagger} - \ldots\bigg),
-	\end{split}
-\end{align}
 
-and by comparison one sees $m_n^2 = m^2 + \frac{\lambda_n}{R^2}$. The dots represent all terms without any $\phi^{(0)}$-coefficients. As one sees, there is an infinite number of masses, since there is an infinite number of eigenvalues; a mathematical problem without any current answer. The hope is that these modes\footnote{The infinite set of which is called the Kaluza-Klein tower of modes. (Often one hears of KK towers.)} can be tied to the graviton, and will be explained better in the following sections.\\
+
+%As can be seen, a complete description depends on $g_{\mu5}$ and $g_{55}$. However, this is precisely where the complication of extra dimensions arises. The metric depends on the space, and the shape of the space is what we do not know\footnote{This is why the field of extra dimensions can be so large and complex, as there are \emph{many} ways to guess at a shape of the new dimension(s), and each model gives a characteristic outcome which must fit experiments at, for example, the LHC.}. \\
+%Firstly, consider a simple model with a massive scalar field $\hat{\phi}(x,\theta)$,
+%
+%\begin{equation}
+%	S_5 = \int dx^4 d\theta \sqrt{-\tilde{G}}\left(-\frac{1}{2}(\partial_ a\hat{\phi})(\partial^a\hat{\phi})^\dagger - \frac{m^2}{2}\hat{\phi}^2 - \frac{c_5}{4!}\hat{\phi}^4\right)
+%	\label{eq:KKaction}
+%\end{equation}
+%
+%where $\tilde{G} \equiv \det(\tilde{g}_{ab})$ and $c_5$ is some coupling constant we do not yet know. The scalar field can be Fourier expanded as
+%
+%\begin{equation}
+%	\hat{\phi}(x,\theta) = \sum_{\substack{n=\{n_1,n_2,\ldots,n_5\}; \\ n_i\in\mathbb{Z}\:\forall\:i}} \phi{(n)}(x)Y_n(\theta)
+%\end{equation}
+%
+%where $Y_n(\theta)$ are orthogonal, normalized eigenfuntions of the Laplace operator on the internal space\footnote{The extra dimension/space, denoted $K_d$.}:
+%
+%\begin{equation}
+%	\Delta_{K_d}Y_n(\theta) = \frac{\lambda_n}{R^2}Y_n(\theta)
+%\end{equation}
+%
+%where $R$ is the "characteristic size" of the space $K_d$ (obviously a radius in the case of circular objects).
+%%%
+
+%Inserting this into equation  and performing the integral over $K_d$ gives
+%
+%\begin{align}
+%	\begin{split}
+%	S_5 = \int dx^4 \sqrt{-\tilde{G}}\bigg(&-\frac{1}{2}(\partial_ \mu\phi^{(0)})(\partial^\mu\phi^{(0)})^\dagger - \frac{m^2}{2}\left(\phi^{(0)}\right)^2\\
+%	& - \sum_{n\neq0} \left[(\partial_ \mu\phi^{(n)})(\partial^\mu\phi^{(n)})^\dagger + m_n^2\phi^{(n)}\phi^{(n)\dagger}\right]\\
+%	& - \frac{c_5}{4!}\left(\phi^{(0)}\right)^4 - \frac{c_5}{4}\left(\phi^{(0)}\right)^2\sum_{n\neq0} \phi^{(n)}\phi^{(n)\dagger} - \ldots\bigg),
+%	\end{split}
+%\end{align}
+%
+%and by comparison one sees $m_n^2 = m^2 + \frac{\lambda_n}{R^2}$. The dots represent all terms without any $\phi^{(0)}$-coefficients. As one sees, there is an infinite number of masses, since there is an infinite number of eigenvalues; a mathematical problem without any current answer. The hope is that these modes\footnote{The infinite set of which is called the Kaluza-Klein tower of modes. (Often one hears of KK towers.)} can be tied to the graviton, and will be explained better in the following sections.\\
+%%%
+
 
 A relation that will be of importance later is the reduction formula:
 
@@ -218,14 +265,24 @@ where
 	S_{E(D)} = \int d^D x\sqrt{-G_D} \frac{1}{16\pi G_{N(D)}}\mathcal{R}^{D}(G_{ab})
 \end{equation}
 
+With the principles of the KK tower and massive gravity, one can start to consider theories that are based on extra dimensions.
+
 \section{The Arkani-Hamed-Dimopoulos-Dvali model}
 The ADD model is mainly based on 3 features:
 
 \begin{itemize}
-	\item There exists $n$ new spatial compact dimensions, with compactification volume $V_n$.
+	\item There exists $d$ new spatial compact dimensions, with compactification volume $V_d$.
 	\item The Planck scale is very low, at the order of one TeV,
 	\item The SM degrees of freedom are localized on a 3D-brane, stretching along 3 non-compact spatial dimensions (i.e. the SM particles move in normal spacetime, not in the new dimension(s)).
 \end{itemize}
+
+The idea is that the electroweak scale is the only fundamental scale in the universe, and that the true Planck scale is actually of the same order. from the reduction formula, one could introduce $d$ new spatial dimensions and find their size, i.e.
+
+\begin{equation}
+	\frac{M_{Pl}^2}{M^{d+2}} = V_d \sim R^d	\quad,\quad \mathcal{O}(M^{d+2}) = \mathcal{O}(m_{EW})
+\end{equation}
+
+where $R$ is the compactification radius as before. With new dimensions, Newton's law for gravitational force would instead be proportional to $r^{-(d+2)}$, which is of course not true. However, since the extra dimensions are compact, only objects with distances less $r<<R$ feel this new force, while it still goes as $r^{-2}$ for $r>>R$. Therefore, for $d=1$, the radius is of the same order as the earth-moon distance, and therefore $d$ can't be equal one. $d=2$ is not possible either. For $d>2$, the radius is so small that van der Waal forces prevent us from conducting "table-top" experiments, and is where particle physics experiments at CERN become relevant. If ADD is true, then it should be possible to determine the radius by measuring the graviton, which is a direct consequence of extra dimensions. Since the mass $m_n$ is inversely proportional to the size, it would be possible to determine the new Planck scale.
 
 In the ADD model, the standard metric is expanded upon by introducing a field $\hat{h}_{ab}(x,\theta)$ such that:
 
@@ -295,11 +352,73 @@ which give $C_1 = Y_1\left(\frac{m_n}{k}\right)$ and $C_2 = -J_1\left(\frac{m_n}
 
 The $h_{\mu\nu}^{(0)}(x)$ field describes the massless graviton, while the $n\geq 1$ states are the massive KK modes, and finally $\varphi$ describes the massless \emph{radion}.
 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim={0.5cm 22cm 11.5cm 0cm},scale=1]{feynGraphs/qqbar_G_ffbar}
+	\caption{$q\bar{q}\:\rightarrow\:f\bar{f}$}
+	\label{fig:gravitonChannel}
+\end{figure}
+
 \section{Graviton production at the LHC}
 
 
 
 \section{Conclusions}
+
+\appendix
+\section{Calculations}
+A detailed calculation for the channel $q\bar{q}\:\rightarrow\:l^+l^-$ is as follows.\\
+The $n$'th resonance spin-2 KK graviton propagator is given by:
+
+\begin{equation}
+	G_n^{\mu\nu\rho\sigma} = i\frac{\eta^{\mu\rho}\eta^{\nu\sigma} + \eta^{\mu\sigma}\eta^{\nu\rho} - \frac{2}{3}\eta^{\mu\nu}\eta^{\rho\sigma}}{k_G^2 - m_n^2 + i\epsilon}
+\end{equation}
+
+The $G\bar{\psi}\psi$-coupling is given by (again, spin-2):
+
+\begin{equation}
+	-\frac{i\kappa}{8}\left[\gamma_\mu(k_1 + k_2)_ \nu + \gamma_\nu(k_1+k_2)_\mu - 2\eta_{\mu\nu}(\slashed k_1 + \slashed k_2 - 2m_f)\right]
+\end{equation}
+
+Therefore, the diagram shown in figure \ref{fig:gravitonChannel} has effective amplitudes:
+
+\begin{align}
+	\begin{split}
+	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -\sum_{n}\frac{i\kappa^2}{64}\bar{u}_q&\left[\gamma_\rho(q_1 + q_2)_\sigma + \gamma_\sigma(q_1+q_2)_\rho - 2\eta_{\rho\sigma}(\slashed q_1 + \slashed q_2 - 2m_f)\right]v_q\\
+	\times&\left[\frac{\eta^{\mu\rho}\eta^{\nu\sigma} + \eta^{\mu\sigma}\eta^{\nu\rho} - \frac{2}{3}\eta^{\mu\nu}\eta^{\rho\sigma}}{k_G^2 - m_n^2 + i\epsilon}\right]\\
+	\times\bar{v}_k&\left[\gamma_\mu(k_1 + k_2)_\nu + \gamma_\nu(k_1+k_2)_\mu - 2\eta_{\mu\nu}(\slashed k_1 + \slashed k_2 - 2m_f)\right]u_k\\
+	= -i\frac{\pi C_4}{4}\bar{u}_q&\left[\gamma_\rho(q_1 + q_2)_ \sigma + \gamma_\sigma(q_1+q_2)_\rho - 2\eta_{\rho\sigma}(\slashed q_1 + \slashed q_2 - 2m_f)\right]v_q\\
+	\times\bar{v}_k&\left[\gamma^\rho(k_1 + k_2)^\sigma + \gamma^\sigma(k_1+k_2)^\rho + \frac{4}{3}\eta^{\sigma\rho}\right]u_k\\
+	= -i\frac{\pi C_4}{2}\bar{u}_q&\Big[(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma_\nu v_q\bar{v}_k\gamma^\nu + (\slashed k_1 + \slashed k_2)v_q\bar{v}_k(\slashed q_1 + \slashed q_2)\\
+	&- 2(\slashed q_1 + \slashed q_2)v_q\bar{v}_k(\slashed k_1 + \slashed k_2) + 4\left(m_q(\slashed q_1 + \slashed q_2)v_q\bar{v}_k + m_fv_q\bar{v}_k(\slashed k_1 + \slashed k_2)\right)\\
+	&- \frac{32}{3}m_fm_qv_q\bar{v}_k\Big]u_k
+	\end{split}
+\end{align}
+
+ where $C_4 \equiv \frac{\kappa^2}{8\pi} D(s)$, $D(s) \equiv \sum_{n} \frac{1}{k_G^2 - m_n^2 + i\epsilon}$. The above expression can be rewritten as
+
+\begin{align}
+	\begin{split}
+	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -i\frac{\pi C_4}{2}\bar{u}_q\Big[&(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma_\nu v_q\bar{v}_k\gamma^\nu + (\slashed k_1 + \slashed k_2)v_q\bar{v}_k(\slashed q_1 + \slashed q_2) - \frac{8}{3}m_fm_qv_q\bar{v}_k\\
+	&-2(\slashed q_1 + \slashed q_2 - 2m_f)v_q\bar{v}_k(\slashed k_1 + \slashed k_2 - 2m_q)\Big]u_k
+	\end{split}
+\end{align}
+
+The last term in the above equation is actually just the Dirac equation in momentum space,
+
+\begin{equation}
+	(\slashed k - m_f)u_f(k) = 0,
+\end{equation}
+
+and therefore equals zero. The amplitude is then
+
+\begin{equation}
+	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -i\frac{\pi C_4}{2}\bar{u}_q\left[(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma_\nu v_q\bar{v}_k\gamma^\nu + (\slashed k_1 + \slashed k_2)v_q\bar{v}_k(\slashed q_1 + \slashed q_2) - \frac{8}{3}m_fm_qv_q\bar{v}_k\right]u_k
+\end{equation}
+
+for the spin-2 massive KK graviton propagators.
+
 
 
 \end{document}
