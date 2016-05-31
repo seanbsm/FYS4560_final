@@ -265,7 +265,20 @@ where
 	S_{E(D)} = \int d^D x\sqrt{-G_D} \frac{1}{16\pi G_{N(D)}}\mathcal{R}^{D}(G_{ab})
 \end{equation}
 
-With the principles of the KK tower and massive gravity, one can start to consider theories that are based on extra dimensions.
+With the principles of the KK tower and massive gravity, one can start to consider theories that are based on extra dimensions.\\
+As is the point with Feynman diagrams, Feynman rules for the graviton would help do calculations. The propagator of massive, spin-2 KK excitations are given by the Fierz-Pauli equation of motion (see reference BLADIBLA), and is
+
+\begin{equation}
+	G_n^{\mu\nu\rho\sigma} = i\frac{\eta^{\mu\rho}\eta^{\nu\sigma} + \eta^{\mu\sigma}\eta^{\nu\rho} - \frac{2}{3}\eta^{\mu\nu}\eta^{\rho\sigma}}{k_G^2 - m_n^2 + i\epsilon}
+	\label{eq:Gprop}
+\end{equation}
+
+The vertex factors with different fields (scalar, spinor, vector-boson) are found by inserting the conserved energy-momentum tensor, for said field, into the Lagrangian, except for the spinor-field. Spinor-graviton couplings, which will be of interest later on, must be found by using the vierbein formalism\footnote{A way with which to rewrite the spacetime metric. The details of this are many and unnecessary for purpose of this paper.}. The massive spinor-graviton spin-2 coupling is
+
+\begin{equation}
+	-\frac{i\kappa}{8}\left[\gamma_\mu(k_1 + k_2)_ \nu + \gamma_\nu(k_1+k_2)_\mu - 2\eta_{\mu\nu}(\slashed k_1 + \slashed k_2 - 2m_f)\right]
+	\label{eq:Gcoupling}
+\end{equation}
 
 \section{The Arkani-Hamed-Dimopoulos-Dvali model}
 The ADD model is mainly based on 3 features:
@@ -284,13 +297,14 @@ The idea is that the electroweak scale is the only fundamental scale in the univ
 
 where $R$ is the compactification radius as before. With new dimensions, Newton's law for gravitational force would instead be proportional to $r^{-(d+2)}$, which is of course not true. However, since the extra dimensions are compact, only objects with distances less $r<<R$ feel this new force, while it still goes as $r^{-2}$ for $r>>R$. Therefore, for $d=1$, the radius is of the same order as the earth-moon distance, and therefore $d$ can't be equal one. $d=2$ is not possible either. For $d>2$, the radius is so small that van der Waal forces prevent us from conducting "table-top" experiments, and is where particle physics experiments at CERN become relevant. If ADD is true, then it should be possible to determine the radius by measuring the graviton, which is a direct consequence of extra dimensions. Since the mass $m_n$ is inversely proportional to the size, it would be possible to determine the new Planck scale.
 
-In the ADD model, the standard metric is expanded upon by introducing a field $\hat{h}_{ab}(x,\theta)$ such that:
+%In the ADD model, the standard metric is expanded upon by introducing a field $\hat{h}_{ab}(x,\theta)$ such that:
+%
+%\begin{equation}
+%	\tilde{g}_{ab}(x,\theta) = \eta_{ab} + \frac{2}{M^{1+d/2}}\hat{h}_{ab}(x,\theta)
+%\end{equation}
 
-\begin{equation}
-	\tilde{g}_{ab}(x,\theta) = \eta_{ab} + \frac{2}{M^{1+d/2}}\hat{h}_{ab}(x,\theta)
-\end{equation}
-
-
+A problem with the massive KK spin-2 propagator is that there are infinitely many KK excitations, each with its own mass. When calculating a Feynman diagram, one has to, in principle, perform a sum over all modes, as one can't know which mode will appear.\\
+In the ADD model, the masses are \emph{very} small, due to the size of $R$ by the reduction formula and the size of $M^{2+d}$, and evenly spaced. This means one can approximate the sum by an integral over the modes ($n$).
 
 \section{The Randall-Sundrum model}
 \subsection{The hierarchy problem in RS1}
@@ -299,7 +313,7 @@ The RS model assumes that there are two points on the $S^1/\mathbb{Z}^2$ ordibfo
 
 
 The two branes, 1 and 2, are located on points $\theta = 0$ and $\theta = \pi$, which means the branes are seperated by a distance $2L = 2R$, where $R$ is the circle radius.\\
-As mentioned, the model set out to explain the hierarchy problem, and will be briefly explained how below. Firstly, the action of the model is given by the sum of the Hilbert-Einstein action and the matter "part":
+As mentioned, the model set out to explain the hierarchy problem, and will be briefly explained how below. Firstly, the action of the model is given by the sum of the Hilbert-Einstein action and the "matter part":
 
 \begin{equation}
 	S_5 = S_E + S_M = \int d^4x \int_{-L}^{L} dy \sqrt{-\tilde{G}}(M^3\mathcal{R}_5 - \Lambda_5)
@@ -369,19 +383,8 @@ The $h_{\mu\nu}^{(0)}(x)$ field describes the massless graviton, while the $n\ge
 \appendix
 \section{Calculations}
 A detailed calculation for the channel $q\bar{q}\:\rightarrow\:l^+l^-$ is as follows.\\
-The $n$'th resonance spin-2 KK graviton propagator is given by:
-
-\begin{equation}
-	G_n^{\mu\nu\rho\sigma} = i\frac{\eta^{\mu\rho}\eta^{\nu\sigma} + \eta^{\mu\sigma}\eta^{\nu\rho} - \frac{2}{3}\eta^{\mu\nu}\eta^{\rho\sigma}}{k_G^2 - m_n^2 + i\epsilon}
-\end{equation}
-
-The $G\bar{\psi}\psi$-coupling is given by (again, spin-2):
-
-\begin{equation}
-	-\frac{i\kappa}{8}\left[\gamma_\mu(k_1 + k_2)_ \nu + \gamma_\nu(k_1+k_2)_\mu - 2\eta_{\mu\nu}(\slashed k_1 + \slashed k_2 - 2m_f)\right]
-\end{equation}
-
-Therefore, the diagram shown in figure \ref{fig:gravitonChannel} has effective amplitudes:
+The $n$'th resonance spin-2 KK graviton propagator is given equation \ref{eq:Gprop}. The $G\bar{\psi}\psi$-coupling is given in equation \ref{eq:Gcoupling}.\\
+The diagram shown in figure \ref{fig:gravitonChannel} therefore has effective amplitudes:
 
 \begin{align}
 	\begin{split}
