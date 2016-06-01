@@ -184,7 +184,7 @@ where $Y_n(y)$ are orthogonal, normalized eigenfuntions of the Laplace operator 
 \Delta_{K_d}Y_n(\theta) = \frac{\lambda_n}{R^2}Y_n(\theta)
 \end{equation}
 
-where $R$ is the "characteristic size" of the space $K_d$ (tied to the volume $V_d$). This series expansion is called the Kalulza-Klein (KK) tower of modes, and one value of $n$ is called mode $n$, and the corresponding term the $n$'th excitation. The field $h_{\mu\nu}(x,y)$ has to satisfy the d'Alembert equation, and in doing this one finds it necessary to redefine the fields $h_{\mu\nu}(x,y)$, $A_{\nu j}$, and $\phi_{ij}$, to $\tilde{h}_{n,\mu\nu}$, $\tilde{A}_{n,\mu i}$, and $\tilde{\phi}_{n,ij}$. The detailed steps are omitted, as they are many and non-intuitive. These new fields, when put into the Lagrangian, will give mass eigenstates. This redefinition of fields can be thought of as an analogue to the rotations from the CKM matrix in QCD theory (needed for mass eigenstates in the Lagrangian), but it is not the same (not a rotation). From the equation of motion one can go one to show that the masses are:
+where $R$ is the "characteristic size" of the space $K_d$ (tied to the volume $V_d$). The exact form of $Y_n(y)$ depends on the structure and size of the new dimension. This series expansion is called the Kalulza-Klein (KK) tower of modes, and one value of $n$ is called mode $n$, and the corresponding term the $n$'th excitation. The field $h_{\mu\nu}(x,y)$ has to satisfy the d'Alembert equation, and in doing this one finds it necessary to redefine the fields $h_{\mu\nu}(x,y)$, $A_{\nu j}$, and $\phi_{ij}$, to $\tilde{h}_{n,\mu\nu}$, $\tilde{A}_{n,\mu i}$, and $\tilde{\phi}_{n,ij}$. The detailed steps are omitted, as they are many and non-intuitive. These new fields, when put into the Lagrangian, will give mass eigenstates. This redefinition of fields can be thought of as an analogue to the rotations from the CKM matrix in QCD theory (needed for mass eigenstates in the Lagrangian), but it is not the same (not a rotation). From the equation of motion one can go one to show that the masses are:
 
 \begin{equation}
 	m_n^2 = \frac{4\pi^2 n^2}{R^2}
@@ -251,12 +251,14 @@ A relation that will be of importance later is the reduction formula:
 
 \begin{equation}
 	M_{Pl}^2 = V_dM^{d+2}
+	\label{eq:red_form}
 \end{equation}
 
 where $M_{Pl} = G_{N(4)}^{-1/2}$ is the 4-dimensional Planck mass and $M^{d+2} = G_{N(4+d)}^{-1/(4+d)}$ is the fundamental mass scale in the new model. The relation is derived by demanding the Einstein-Hilbert action to be the same with and without the new dimension(s)\footnote{This is because the new dimension(s) must reproduce what we observe, and 4D spacetime fits very well with observations.}, and performing the integrals by using KK mode expansion on the integrand. I.e one demands:
 
 \begin{equation}
 	S_{E(4)} = S_{E(d+4)}
+	\label{eq:requirement_for_reduction}
 \end{equation}
 
 where
@@ -304,40 +306,58 @@ where $R$ is the compactification radius as before. With new dimensions, Newton'
 %\end{equation}
 
 A problem with the massive KK spin-2 propagator is that there are infinitely many KK excitations, each with its own mass. When calculating a Feynman diagram, one has to, in principle, perform a sum over all modes, as one can't know which mode will appear.\\
-In the ADD model, the masses are \emph{very} small, due to the size of $R$ by the reduction formula and the size of $M^{2+d}$, and evenly spaced. This means one can approximate the sum by an integral over the modes ($n$).
+In the ADD model, the masses are \emph{very} small, due to the size of $R$ by the reduction formula and the size of $M$, and evenly spaced. This means one can approximate the sum by an integral over the modes ($n$).
 
 \section{The Randall-Sundrum model}
 \subsection{The hierarchy problem in RS1}
 The RS model assumes that there are two points on the $S^1/\mathbb{Z}^2$ ordibfold in which 3-branes are compactified. What this means is that there are two 3-dimensional, non-compact branes that are connected at every point by a "circle", see figure SOME FIG.\\
 
+%\begin{center}
+%	\begin{tikzpicture}
+%	%circle
+%	\draw (0,0) circle (2cm);
+%	\draw (-2,0) -- (2,0);
+%	\draw (0,0) -- (70:2cm);
+%	\draw (0,0) -- (-70:2cm);
+%	\draw (-70:5mm) arc (-70:70:5mm);
+%	
+%%	node [red,above] at (semaphore.north) {$s\le 3$};
+%	%connections
+%	%\draw(-2,0) .. (-3,0)
+%	\end{tikzpicture}
+%\end{center}
 
-
-The two branes, 1 and 2, are located on points $\theta = 0$ and $\theta = \pi$, which means the branes are seperated by a distance $2L = 2R$, where $R$ is the circle radius.\\
+The two branes, 1 and 2, are located on points $\theta = 0$ and $\theta = \pi$, which means the branes are seperated by a distance $2R$, where $R$ is the circle radius.\\
 As mentioned, the model set out to explain the hierarchy problem, and will be briefly explained how below. Firstly, the action of the model is given by the sum of the Hilbert-Einstein action and the "matter part":
 
 \begin{equation}
-	S_5 = S_E + S_M = \int d^4x \int_{-L}^{L} dy \sqrt{-\tilde{G}}(M^3\mathcal{R}_5 - \Lambda_5)
+	S_5 = S_E + S_M = \int d^4x \int_{-L}^{L} dy \sqrt{-\tilde{g}}(M_5^3\mathcal{R}_5 - \Lambda_5)
 \end{equation}
 
-where $\Lambda_5$ is the five dimensional cosmological constant. In order to match real world observations, the new metric must uphold Poinecaré invariance, which can be shown to lead to:
+where $\Lambda_5$ is the five dimensional cosmological constant, $\tilde{g}$ is the determinant of the (full space) metric tensor, and $M_5$ is the new mass scale. In order to match real world observations, the new metric must uphold Poinecaré invariance, which can be shown to lead to:
 
 \begin{equation}
 	ds^2 = e^{-2A(y)}\eta_{\mu\nu}dx^\mu dx^\nu + dy^2
 	\label{eq:RS_lineelement}
 \end{equation}
 
-where $A(y)$ is called the \emph{warp factor}. Solving the Einstein equations lets one find that $A(y) = \pm ky$, where $k \equiv \sqrt{\frac{-\Lambda}{12M^3}}$ is a constant. Since the orbifold abides $\mathbb{Z}^2$ symmetry, $A(y) = A(-y) \:\rightarrow\: A(y) = k|y|$.\\
-There is a problem with action above, which is that it does not include the energy densities of the two branes, that are:
+where $A(y)$ is called the \emph{warp factor}, hence the name "warped" extra dimensions. Since the orbifold abides $\mathbb{Z}^2$ symmetry, $A(y) = A(-y) \:\rightarrow\: A(y) = k|y|$. Solving the Einstein equations, as Randall and Sundrum did in their original article, lets one find that $A(y) = \pm ky$, where $k \equiv \sqrt{\frac{-\Lambda}{24M^3}}$ is a constant ($\Lambda = -24M_5^3k^2$). Because the metric is fundamentally different\footnote{It has actually undergone a so-called Weyl transformation.}, the reduction formula becomes a little different. Apparently, it now becomes\footnote{Finding the new reduction formula is done by claiming equation \ref{eq:requirement_for_reduction} to be true and doing the calculation, same as was done to get equation \ref{eq:red_form}.};
+
+\begin{equation}
+	M_{Pl}^2 = \frac{M_5^3}{k}\left[ 1-e^{-2kR\pi} \right]
+\end{equation}
+
+where one has set $|y| = \pi R$ (after all, it is a circle). In order to get a a new mass scale which solves the hierarchy problem, in has to require that $kR \sim 12 \:\rightarrow\: e^{k\pi R} \sim 10^{15}$. There is a problem with action above, which is that it does not include the energy densities of the two branes, which are:
 
 \begin{align}
-	S_1 &= \int_{B_1}\int_{S^1/\mathbb{Z}^2}d^4xdy \sqrt{-\tilde{G}(x,y)}\lambda_1\delta(y)\\
-	S_2 &= \int_{B_2}\int_{S^1/\mathbb{Z}^2}d^4xdy \sqrt{-\tilde{G}(x,y)}\lambda_2\delta(y-L)
+	S_1 &= \int_{B_1}\int_{S^1/\mathbb{Z}^2}d^4xdy \sqrt{-\tilde{g}(x,y)}\lambda_1\delta(y)\\
+	S_2 &= \int_{B_2}\int_{S^1/\mathbb{Z}^2}d^4xdy \sqrt{-\tilde{g}(x,y)}\lambda_2\delta(y-L)
 \end{align}
 
-where $\tilde{G}(x,0) = G_1$ and $\tilde{G}(x,L) = G_2$ have been used. So, the total action for the space is $S = S_E+S_M+S_1+S_2$. To fulfil the Einstein equations, one needs to impose $\lambda_1 = -\lambda_2 = 12kM^3$. THINK ON THIS
+where $\tilde{g}(x,0) = g_1$ and $\tilde{g}(x,L) = g_2$ have been used (i.e. $\tilde{g}(x,y)$ contains the regular 4-dimensional metric of each brane). So, the total action for the space is $S = S_E+S_M+S_1+S_2$. 
 
-\subsection{KK mode expansion/Finding gravitons}
-Much in the same manner as for QED and other gauge theories, one can create gravitational bosons. This means doing a metric transform, given by:
+\subsection{RS1 gravitons}
+Since the metric in RS1 is a bit different from that used in the KK mode expansion, one has to do do it again to get the new current model's graviton masses. One starts with a metric transform, given by:
 
 \begin{equation}
 	ds^2 = e^{-2k|y|}(\eta_{\mu\nu} + \tilde{h}_{\mu\nu}(x,y))dx^\mu dx^\nu + (1+\phi(x))dy^2
@@ -356,15 +376,28 @@ where $\chi_0(y) = 2\sqrt{kR}e^{-2k|y|}$ and
 	\chi_n(y) = N_n\left[ C_1Y_2\left(\frac{m_n}{k}e^{k|y|}\right) +   C_2J_2\left(\frac{m_n}{k}e^{k|y|}\right)\right] \quad,\quad n\neq 0
 \end{equation}
 
-While this seems out of the blue, this is the result of diagonalizing the Lagrangian, which is a rather intricate procedure. The functions $\chi_n$ are eigenfunction of an equation met during the diagonalising of the Lagrangian. $J_2$ and $Y_2$ are the Bessel functions of the first and second kind, respectively. The constants $C_1$ and $C_2$ can be determined by the boundary conditions on the vacuum energy terms of the energy-momentum tensor (the delta functions),
+While it seems out of the blue, this is the result of diagonalizing the Lagrangian, which is a rather intricate procedure. The functions $\chi_n$ are eigenfunction of an equation met during the diagonalising of the Lagrangian. $J_2$ and $Y_2$ are the Bessel functions of the first and second kind, respectively. The constants $C_1$ and $C_2$ can be determined by the boundary conditions on the vacuum energy terms of the energy-momentum tensor (the delta functions),
 
 \begin{equation}
-	T_{ab} = \lambda_1\sqrt{G_1}g_{\mu\nu}^{(1)}\delta_a^\mu\delta_b^\nu\delta(y) + \lambda_2\sqrt{G_2}g_{\mu\nu}^{(2)}\delta_a^\mu\delta_b^\nu\delta(y-\pi R),
+	T_{ab} = \lambda_1\sqrt{g_1}g_{\mu\nu}^{(1)}\delta_a^\mu\delta_b^\nu\delta(y) + \lambda_2\sqrt{g_2}g_{\mu\nu}^{(2)}\delta_a^\mu\delta_b^\nu\delta(y-\pi R),
 \end{equation}
 
-which give $C_1 = Y_1\left(\frac{m_n}{k}\right)$ and $C_2 = -J_1\left(\frac{m_n}{k}\right)$ SOMETHING MORE HERE\\
+which give $C_1 = Y_1\left(\frac{m_n}{k}\right)$ and $C_2 = -J_1\left(\frac{m_n}{k}\right)$. Here $\lambda_1 = -\lambda_2 = 24M_5^3k$, but this will not be discussed further. The tensor leads to an eigenvalue equation, from which one will find that the spin-2 graviton masses are connected to the roots of the Bessel function $J_1$ by:
 
-The $h_{\mu\nu}^{(0)}(x)$ field describes the massless graviton, while the $n\geq 1$ states are the massive KK modes, and finally $\varphi$ describes the massless \emph{radion}.
+\begin{equation}
+	m_n = \beta_n ke^{-kR\pi},\quad J_1(\beta_n) = 0 \:\forall\: n\in\mathbb{N}
+\end{equation}
+
+The $h_{\mu\nu}^{(0)}(x)$ field describes the massless graviton, while the $n\geq 1$ states are the massive KK modes, and finally $\varphi$ describes the massless \emph{radion}.\\
+
+Now that the masses are known, one can see that they behave very different from those of the ADD model. Here, they are of the order of TeV, and seperated by a few orders of TeV (due to the roots $\beta_n = 3.83,\:7.02,\:10.17,\:\ldots$). This means there should be very clear, separate peaks in particle detectors, unlike that of the ADD model where the masses were so close they could be approximated by integration.\\
+With a working theory for the RS1 model, one would like to do calculations. Specifically, one would like for the Feynman rules mentioned earlier to still apply. This can be done by comparing the Hilbert-Einstein action for the general KK case, and the RS1 case. One will see that the actions are the same (to first order in $\kappa$) should one choose:
+
+\begin{equation}
+	\kappa = \sqrt{2}\frac{\beta_1}{m_1}\frac{k}{M_{Pl}}
+\end{equation}
+
+As one sees, the RS1 model is completely determined by the $m_1$ mass and the factor $\frac{k}{M_{Pl}}$, which is believed to lie between $0.01$ and $0.1$\footnote{See H. Davoudiasl, J.L Hewett and T. G. Rizzo, Phys. Rev. Lett. $\bm{84}$, 3370 (1999) [arXiv:hep-ph/9905221]}.
 
 
 \begin{figure}[H]
@@ -375,6 +408,39 @@ The $h_{\mu\nu}^{(0)}(x)$ field describes the massless graviton, while the $n\ge
 \end{figure}
 
 \section{Graviton production at the LHC}
+With a couple of theories well at hand, it would be interesting to know how they should appear in a particle collider such as the LHC. A quark-anti-quark annihilation in proton-proton collisions can produce a graviton as gravitons and fermion couple. Furthermore, this graviton can then decay to a lepton-pair, such as muons. Obviously there are many channels that give off a dimuon final state. However, there are no spin-2 particles in the standard model, and measuring the angular distribution would be expected to give a characteristic contour. One example of angular distribution is the differential cross section. Here, the forward-backward asymmetry would be interesting to study and compare to the corresponding scalar and vector channels ($H$ and $\gamma,Z$), the two of which have already been studied in previous projects.
+
+\subsection{SM backgrounds}
+The spin-averaged amplitude for $e^+e^- \rightarrow \tau^+\tau^-$ in the electroweak channel was then found. The formula is quite general for all fermions in the high $s$ limit, in in the current case will be:
+
+\begin{equation}
+	\langle|\mathcal{M}(q\bar{q}\rightarrow l^+l^-)|^2\rangle = Q_f\left(A'\left(1+\cos^2(\theta)\right) + B'\cos(\theta)\right)
+\end{equation}
+
+where
+
+\begin{align}
+	\begin{split}
+	A' &= e^4 + \frac{e^2g_Z^2P_Zs}{2}c_V^qc_V^l + \frac{|P_Z|^2 g_Z^4 s^2}{16}\left[\left(c_V^q\right)^2 + \left(c_A^q\right)^2\right]\left[\left(c_V^l\right)^2 + \left(c_A^l\right)^2\right]\\
+	B' &= e^2g_Z^2P_Zsc_A^qc_A^l + \frac{1}{2}|P_Z|^2g_Z^4s^2 c_V^qc_A^qc_V^l c_A^l
+	\end{split}
+\end{align}
+
+and
+\begin{itemize}
+	\item $Q_f$ is the colour factor ($Q_f = 3$).
+	\item $P_Z(s) = \frac{1}{s-m_Z^2 + im_Z\Gamma_Z}$, where $\Gamma_Z$ is the $Z$-boson decay width.
+	\item $c^f_A$ and $c^f_V$ are the axial and vector coupling coefficients of the $Z$-boson to Dirac spinor $f$.
+	\item $g_Z$ is the weak coupling constant.
+\end{itemize}
+
+Furthermore, the corresponding Higgs channel is given by:
+
+\begin{equation}
+	\langle|\mathcal{M}(q\bar{q}\rightarrow l^+l^-)|^2\rangle = \frac{16m_fm_q}{v^2}Q_f\left(k_{1,\mu}k_2^\mu - m_q^2\right)\left(q_{1,\mu}q_2^\mu - m_l^2\right)
+\end{equation}
+
+where $v=246\:\text{GeV}$ is the vacuum expectation value of the Higgs field. As one would expect, there is no angular dependency for a scalar field.
 
 
 
@@ -420,8 +486,14 @@ and therefore equals zero. The amplitude is then
 	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -i\frac{\pi C_4}{2}\bar{u}_q\left[(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma_\nu v_q\bar{v}_k\gamma^\nu + (\slashed k_1 + \slashed k_2)v_q\bar{v}_k(\slashed q_1 + \slashed q_2) - \frac{8}{3}m_fm_qv_q\bar{v}_k\right]u_k
 \end{equation}
 
-for the spin-2 massive KK graviton propagators.
+for the spin-2 massive KK graviton propagators. The next step depends on the model, as one will have to perform the KK tower sum. As was explained in the text, in the ADD model, the sum may approximated by an integral and one gets the solution (assuming $s<<M_S$):
 
-
+\begin{equation}
+	-i\kappa^2D(s) = -i8\pi C_4\simeq
+	\begin{cases}
+	-\frac{8\pi}{M_S^4}\ln\left(\frac{M_S^2}{s^2}\right)       & \quad \text{if } d=2\\
+	-\frac{16\pi}{(d-2)M_S^4}  & \quad \text{if } d>2\\
+	\end{cases}
+\end{equation}
 
 \end{document}
