@@ -454,7 +454,7 @@ The diagram shown in figure \ref{fig:gravitonChannel} therefore has effective am
 
 \begin{align}
 	\begin{split}
-	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -\sum_{n}\frac{i\kappa^2}{64}\bar{u}_q&\left[\gamma_\rho(q_1 + q_2)_\sigma + \gamma_\sigma(q_1+q_2)_\rho - 2\eta_{\rho\sigma}(\slashed q_1 + \slashed q_2 - 2m_f)\right]v_q\\
+	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -Q_f\sum_{n}\frac{i\kappa^2}{64}\bar{u}_q&\left[\gamma_\rho(q_1 + q_2)_\sigma + \gamma_\sigma(q_1+q_2)_\rho - 2\eta_{\rho\sigma}(\slashed q_1 + \slashed q_2 - 2m_f)\right]v_q\\
 	\times&\left[\frac{\eta^{\mu\rho}\eta^{\nu\sigma} + \eta^{\mu\sigma}\eta^{\nu\rho} - \frac{2}{3}\eta^{\mu\nu}\eta^{\rho\sigma}}{k_G^2 - m_n^2 + i\epsilon}\right]\\
 	\times\bar{v}_k&\left[\gamma_\mu(k_1 + k_2)_\nu + \gamma_\nu(k_1+k_2)_\mu - 2\eta_{\mu\nu}(\slashed k_1 + \slashed k_2 - 2m_f)\right]u_k\\
 	= -i\frac{\pi C_4}{4}\bar{u}_q&\left[\gamma_\rho(q_1 + q_2)_ \sigma + \gamma_\sigma(q_1+q_2)_\rho - 2\eta_{\rho\sigma}(\slashed q_1 + \slashed q_2 - 2m_f)\right]v_q\\
@@ -469,7 +469,7 @@ The diagram shown in figure \ref{fig:gravitonChannel} therefore has effective am
 
 \begin{align}
 	\begin{split}
-	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -i\frac{\pi C_4}{2}\bar{u}_q\Big[&(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma_\nu v_q\bar{v}_k\gamma^\nu + (\slashed k_1 + \slashed k_2)v_q\bar{v}_k(\slashed q_1 + \slashed q_2) - \frac{8}{3}m_fm_qv_q\bar{v}_k\\
+	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -iQ_f\frac{\pi C_4}{2}\bar{u}_q\Big[&(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma_\nu v_q\bar{v}_k\gamma^\nu + (\slashed k_1 + \slashed k_2)v_q\bar{v}_k(\slashed q_1 + \slashed q_2) - \frac{8}{3}m_fm_qv_q\bar{v}_k\\
 	&-2(\slashed q_1 + \slashed q_2 - 2m_f)v_q\bar{v}_k(\slashed k_1 + \slashed k_2 - 2m_q)\Big]u_k
 	\end{split}
 \end{align}
@@ -483,17 +483,86 @@ The last term in the above equation is actually just the Dirac equation in momen
 and therefore equals zero. The amplitude is then
 
 \begin{equation}
-	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -i\frac{\pi C_4}{2}\bar{u}_q\left[(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma_\nu v_q\bar{v}_k\gamma^\nu + (\slashed k_1 + \slashed k_2)v_q\bar{v}_k(\slashed q_1 + \slashed q_2) - \frac{8}{3}m_fm_qv_q\bar{v}_k\right]u_k
+	i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -iQ_f\frac{\pi C_4}{2}\bar{u}_q\left[(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma_\nu v_q\bar{v}_k\gamma^\nu + (\slashed k_1 + \slashed k_2)v_q\bar{v}_k(\slashed q_1 + \slashed q_2) - \frac{8}{3}m_fm_qv_q\bar{v}_k\right]u_k
 \end{equation}
 
-for the spin-2 massive KK graviton propagators. The next step depends on the model, as one will have to perform the KK tower sum. As was explained in the text, in the ADD model, the sum may approximated by an integral and one gets the solution (assuming $s<<M_S$):
+for the spin-2 massive KK graviton propagators. In order to talk about measurable quantities, this will have to be squared; an arduous calculation. The complex conjugate of $\mathcal{M}$ is:
 
 \begin{equation}
-	-i\kappa^2D(s) = -i8\pi C_4\simeq
+	-i\mathcal{M}^*(q\bar{q}\:\rightarrow\:f\bar{f}) = iQ_f\frac{\pi C_4^*}{2}\bar{u}_k\left[(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma^\nu v_k\bar{v}_q\gamma_\nu + (\slashed q_1 + \slashed q_2)v_k\bar{v}_q(\slashed k_1 + \slashed k_2) - \frac{8}{3}m_fm_qv_k\bar{v}_q\right]u_q
+\end{equation}
+
+Obviously, $|\mathcal{M}|^2$ is a large expression, but since the KK gravitons do not favour any particular chirality states, the calculation mainly involves application of the trace mechanism when taking the spin average. Before doing any sort of assumption, one will end up with\footnote{Where $\langle|\mathcal{M}|^2\rangle = \frac{1}{4}\sum_{\text{all spins}}|\mathcal{M}|^2$.}
+
+\begin{align}
+	\begin{split}
+	\langle\mathcal{M}|^2\rangle = \pi^2Q_f^2|C_4|^2\Bigg\{ &2\left[(k_1+k_2)_\mu(q_1+q_2)^\mu\right]^2\bigg[ (q_1\cdot k_1)(q_2\cdot k_2) +(q_2\cdot k_1)(q_1\cdot k_2)\\
+	&\hspace{4.4cm}- (q_1\cdot q_2)(k_1\cdot k_2 + m_q^2) \\
+	&\hspace{4.4cm}- (k_1\cdot k_2)(q_1\cdot q_2 + m_l^2)\\
+	&\hspace{4.4cm} + 4(k_1\cdot k_2 + m_q^2)(q_1\cdot q_2 + m_l^2)\bigg]\\
+	&+ 2\left[(k_1+k_2)_\mu(q_1+q_2)^\mu\right](k_1+k_2)^\nu(q_1+q_2)_\sigma\\
+	&\hspace{3.6cm}\times\bigg[ (q_1\cdot k_1)q_{2,\nu}k_2^\sigma + (q_1\cdot k_2)q_{2,\nu}k_1^\sigma\\
+	&\hspace{4.4cm}+(q_2\cdot k_1)q_{1,\nu}k_2^\sigma + (q_2\cdot k_2)q_{1,\nu}k_1^\sigma\\
+	&\hspace{4.4cm} -(k_{1,\nu}k_2^\sigma + k_1^\sigma k_{2,\nu})(q_1\cdot q_2 + m_l^2)\\
+	&\hspace{4.4cm} -(q_{1,\nu}q_2^\sigma + q_1^\sigma q_{2,\nu})(k_1\cdot k_2 + m_q^2)\\
+	&\hspace{4.4cm} +g_\nu^\sigma(q_1\cdot q_2 + m_l^2)(k_1\cdot k_2 + m_q^2) \bigg]\\
+	&+\left[2(k_1+k_2)_\mu q_1^\mu (k_1+k_2)_\nu q_2^\nu - (k_1+k_2)^2(q_1\cdot q_2 + m_l^2)\right]\\
+	&+\left[2(k_1+k_2)_\mu q_1^\mu (k_1+k_2)_\nu q_2^\nu - (k_1+k_2)^2(q_1\cdot q_2 + m_l^2)\right]\\
+	&+\frac{64}{9}m_l^2m_q^2(q_1\cdot q_2 + m_l^2)(k_1\cdot k_2 + m_q^2)\Bigg\}
+	\end{split}
+	\label{eq_ffs}
+\end{align}
+
+Now it would be nice to ignore the mass-terms of the SM particles such that
+
+\begin{align}
+	\begin{split}
+	k_1 &= (E,0,0,E)\\
+	k_2 &= (E,0,0,-E)\\
+	q_1 &= (E,-\bm{k})\\
+	q_2 &= (E,\bm{k})
+	\end{split}
+\end{align}
+
+in the centre of mass (CM) frame. Since $E = \frac{s}{2}$, neglecting mass-terms requires very high energies\footnote{Especially since the top quark has a mass of $\sim 173$ GeV.}. To see that this is a reasonable assumption one only has to look at the propagator factor $|C_4|^2$.\\
+The factor $|C_4|^2$ depends on the model, as one will have to perform the KK tower sum. As was explained in the text, in the ADD model, the sum may approximated by an integral and one gets the solution (assuming $s<<M_S$):
+
+\begin{equation}
+	-i\kappa^2D_{ADD}(s) = -i8\pi C_4\simeq
 	\begin{cases}
 	-\frac{8\pi}{M_S^4}\ln\left(\frac{M_S^2}{s^2}\right)       & \quad \text{if } d=2\\
 	-\frac{16\pi}{(d-2)M_S^4}  & \quad \text{if } d>2\\
 	\end{cases}
 \end{equation}
+
+In the RS1 model, the KK masses are separated by a few TeV, and for simplicity only the first mode excitation will be considered. Therefore:
+
+\begin{equation}
+	-i\kappa^2D_{RS}(s) = -i8\pi C_4\simeq = -\frac{i\kappa 2}{k_G^2 - m_1^2 + i\epsilon}\quad,\quad \kappa = \sqrt{2}\frac{\beta_1}{m_1}\frac{k}{M_{Pl}} \approx 0.05\times\sqrt{2}\frac{3.38}{m_1}
+\end{equation}
+
+Because of the predicted sizes of $M_S$ and $m_1$, $s$ will have to be large or $\langle|\mathcal{M}|^2\rangle$ is negligible compared to the SM background.\\
+Without mass-terms, one can put the following identities to use:
+
+\begin{align}
+	\begin{split}
+	(k_1+k_2)^2 &= (q_1 + q_2)^2 = (k_1+k_2)_\mu(q_1+q_2)^\mu = 4E^2\\
+	|\bm{q}_1| &= \sqrt{E^2 - m_f^2} \approx E\\
+	\bm{q}_1\times \bm{e}_z &= |\bm{q}_1|\cos(\theta) \approx E\cos(\theta)\\
+	q_1\cdot q_2 &= k_1\cdot k_2 = 2E^2\\
+	k_1\cdot q_2 &= k_2\cdot q_1 = E^2(1-\cos(\theta))\\
+	k_1\cdot q_1 &= k_2\cdot q_2 = E^2(1+\cos(\theta))\\
+	(k_1+k_2)_\mu k_1^\mu &= (k_1+k_2)_\mu k_2^\mu = (k_1+k_2)_\mu q_1^\mu = (k_1+k_2)_\mu q_2^\mu = 2E^2\\
+	(q_1+q_2)_\mu k_1^\mu &= (q_1+q_2)_\mu k_2^\mu = (q_1+q_2)_\mu q_1^\mu = (q_1+q_2)_\mu q_2^\mu = 2E^2
+	\end{split}
+\end{align}
+
+Having neglected all mass terms, equation \ref{eq_ffs} then reduces to
+
+\begin{equation}
+	\langle|\mathcal{M}|^2\rangle = 32Q_f^2\pi^2|C_4|^2 \left(\frac{s}{2}\right)^8\left[\cos(\theta) + 7\right]
+\end{equation}
+
+where $\theta$ is the angle between $\bm{k}_1$ and $\bm{q}_1$.
 
 \end{document}
