@@ -7,9 +7,9 @@ steps = 1e3
 cosAng = np.linspace(-1,1,steps)
 scalar = np.ones(steps)*0.5
 vector0 = (1+cosAng**2 + cosAng)
-vector = (vector0 - min(vector0))/(max(vector0)-min(vector0))
+vector = (vector0)/max(vector0) #- min(vector0))/(max(vector0)-min(vector0))
 tensor0 = (1-3*cosAng**2 + 4*cosAng**4)
-tensor = (tensor0 - min(tensor0))/(max(tensor0)-min(tensor0))
+tensor = (tensor0)/max(tensor0)# - min(tensor0))/(max(tensor0)-min(tensor0))
 
 
 plt.xlabel(r'$\cos(\theta)$')
