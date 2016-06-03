@@ -403,7 +403,7 @@ As one sees, the RS1 model is completely determined by the $m_1$ mass and the fa
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim={0.5cm 22cm 11.5cm 0cm},scale=1]{feynGraphs/qqbar_G_ffbar}
-	\caption{$q\bar{q}\:\rightarrow\:f\bar{f}$}
+	\caption{Feynman diagram for $q\bar{q}\:\rightarrow\:G\:\rightarrow\:f\bar{f}$ where momentum follows fermion line (i.e. $k_1$ and $q_2$ go towards vertices, $k_2$ and $q_1$ move away).}
 	\label{fig:gravitonChannel}
 \end{figure}
 
@@ -443,7 +443,16 @@ Furthermore, the corresponding Higgs channel is given by:
 where $v=246\:\text{GeV}$ is the vacuum expectation value of the Higgs field. As one would expect, there is no angular dependency for a scalar field.
 
 \subsection{Angular distributions}
-Below are the differential cross-sections for the scalar, vector and tensor channels for $q\bar{q}\:\rightarrow\:l^+l^-$, where in the last case the masses have been neglected. As one can see, each case differs greatly from others. This plot is interesting not only in the sense that it shows a clear way with which to separate the three cases, but it also shows where ought to be looking:
+Below are the differential cross-sections for the scalar, vector and tensor channels for $q\bar{q}\:\rightarrow\:l^+l^-$, where in the last case the masses have been neglected. As one can see, each case differs greatly from others.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{angDist.pdf}
+	\caption{Normalized angular distributions for different channels, taken from http://arxiv.org/pdf/hep-ph/0006114.pdf.}
+	\label{fig:1a}
+\end{figure}
+
+This plot is interesting not only in the sense that it shows a clear way with which to separate the three cases, but it also shows where ought to be looking:
 
 \begin{itemize}
 	\item Spin-0: Shows no favoured angle.
@@ -505,8 +514,8 @@ Obviously, $|\mathcal{M}|^2$ is a large expression, but since the KK gravitons d
 \begin{align}
 	\begin{split}
 	\langle\mathcal{M}|^2\rangle = \pi^2Q_f^2|C_4|^2\Bigg\{ &2\left[(k_1+k_2)_\mu(q_1+q_2)^\mu\right]^2\bigg[ (q_1\cdot k_1)(q_2\cdot k_2) +(q_2\cdot k_1)(q_1\cdot k_2)\\
-	&\hspace{4.4cm}- (q_1\cdot q_2)(k_1\cdot k_2 + m_q^2) \\
-	&\hspace{4.4cm}- (k_1\cdot k_2)(q_1\cdot q_2 + m_l^2)\\
+	&\hspace{4.4cm}- 2(q_1\cdot q_2)(k_1\cdot k_2 + m_q^2) \\
+	&\hspace{4.4cm}- 2(k_1\cdot k_2)(q_1\cdot q_2 + m_l^2)\\
 	&\hspace{4.4cm} + 4(k_1\cdot k_2 + m_q^2)(q_1\cdot q_2 + m_l^2)\bigg]\\
 	&+ 2\left[(k_1+k_2)_\mu(q_1+q_2)^\mu\right](k_1+k_2)^\nu(q_1+q_2)_\sigma\\
 	&\hspace{3.6cm}\times\bigg[ (q_1\cdot k_1)q_{2,\nu}k_2^\sigma + (q_1\cdot k_2)q_{2,\nu}k_1^\sigma\\
@@ -532,7 +541,7 @@ Now it would be nice to ignore the mass-terms of the SM particles such that
 	\end{split}
 \end{align}
 
-in the centre of mass (CM) frame. Since $E = \frac{s}{2}$, neglecting mass-terms requires very high energies\footnote{Especially since the top quark has a mass of $\sim 173$ GeV.}. To see that this is a reasonable assumption one only has to look at the propagator factor $|C_4|^2$.\\
+in the centre of mass (CM) frame. Note that the momentum convention so far has been that it follows the fermion line. For the above to be true, one has to change all $k_2$ and $q_2$ to $-k_2$ and $-q_2$, respectively. Since $E = \frac{s}{2}$, neglecting mass-terms requires very high energies\footnote{Especially since the top quark, a possible quark annihilation, has a mass of $\sim 173$ GeV.}. To see that this is a reasonable assumption one only has to look at the propagator factor $|C_4|^2$.\\
 The factor $|C_4|^2$ depends on the model, as one will have to perform the KK tower sum. As was explained in the text, in the ADD model, the sum may approximated by an integral and one gets the solution (assuming $s<<M_S$):
 
 \begin{equation}
@@ -550,27 +559,54 @@ In the RS1 model, the KK masses are separated by a few TeV, and for simplicity o
 \end{equation}
 
 Because of the predicted sizes of $M_S$ and $m_1$, $s$ will have to be large or $\langle|\mathcal{M}|^2\rangle$ is negligible compared to the SM background.\\
-Without mass-terms, one can put the following identities to use:
+Without mass-terms, one can put the following identities to use (note the sign change on $k_2$ and $q_2$):
 
 \begin{align}
 	\begin{split}
-	(k_1+k_2)^2 &= (q_1 + q_2)^2 = (k_1+k_2)_\mu(q_1+q_2)^\mu = 4E^2\\
+	(k_1-k_2)^2 &= (q_1 - q_2)^2 = (k_1-k_2)_\mu(q_1-q_2)^\mu = 4E^2\\
 	|\bm{q}_1| &= \sqrt{E^2 - m_f^2} \approx E\\
 	\bm{q}_1\times \bm{e}_z &= |\bm{q}_1|\cos(\theta) \approx E\cos(\theta)\\
 	q_1\cdot q_2 &= k_1\cdot k_2 = 2E^2\\
-	k_1\cdot q_2 &= k_2\cdot q_1 = E^2(1-\cos(\theta))\\
-	k_1\cdot q_1 &= k_2\cdot q_2 = E^2(1+\cos(\theta))\\
-	(k_1+k_2)_\mu k_1^\mu &= (k_1+k_2)_\mu k_2^\mu = (k_1+k_2)_\mu q_1^\mu = (k_1+k_2)_\mu q_2^\mu = 2E^2\\
-	(q_1+q_2)_\mu k_1^\mu &= (q_1+q_2)_\mu k_2^\mu = (q_1+q_2)_\mu q_1^\mu = (q_1+q_2)_\mu q_2^\mu = 2E^2
+	k_1\cdot q_2 &= k_2\cdot q_1 = E^2(1+\cos(\theta))\\
+	k_1\cdot q_1 &= k_2\cdot q_2 = E^2(1-\cos(\theta))\\
+	(q_1-q_2)_\mu k_2^\mu &= (k_1-k_2)_\mu q_2^\mu = 2E^2\cos(\theta)\\
+	(q_1-q_2)_\mu q_2^\mu &= (k_1-k_2)_\mu k_2^\mu = 2E^2\\
+	(q_1-q_2)_\mu k_1^\mu &= (k_1-k_2)_\mu q_1^\mu = -2E^2\cos(\theta)\\
+	(q_1-q_2)_\mu q_1^\mu &= (k_1-k_2)_\mu k_1^\mu = -2E^2
 	\end{split}
 \end{align}
 
-Having neglected all mass terms, equation \ref{eq_ffs} then reduces to
+where $\theta$ is the angle between $\bm{k}_1$ and $\bm{q}_1$ in the centre of mass. Having neglected all mass terms, equation \ref{eq_ffs} then reduces to
 
 \begin{equation}
-	\langle|\mathcal{M}|^2\rangle = 32Q_f^2\pi^2|C_4|^2 \left(\frac{s}{2}\right)^8\left[\cos^2(\theta) + 7\right]
+	\langle|\mathcal{M}|^2\rangle = 64Q_f^2\pi^2|C_4|^2 \left(\frac{s}{2}\right)^8\left[1-3\cos^2(\theta) + 4\cos^4(\theta)\right]
 \end{equation}
 
-where $\theta$ is the angle between $\bm{k}_1$ and $\bm{q}_1$.
+which is precisely the result gotten reference http://arxiv.org/pdf/hep-ph/0006114.pdf\\
+
+The differential cross section for two-body collision (particle $A$ and $B$) process is
+
+\begin{equation}
+	\frac{d\sigma}{d\cos(\theta)} = \frac{1}{2E_A2E_B|v_A-v_B|}\frac{1}{16\pi}\frac{2|\bm{p}_1|}{E_{CM}}|\mathcal{M}_{fi}|^2
+\end{equation}
+
+In the centre of mass frame one has $E_A=E_B=E=\frac{s}{2}$ and $|v_A-v_B| = 2$. Finally, one has:
+
+\begin{align}
+	\frac{d\sigma_{H}}{d\cos(\theta)} &= \frac{2}{\pi s^2} \sqrt{1-4\frac{m_q^2}{s^2}}\frac{16m_fm_q}{v^2}Q_f^2\left[ s^4 - \frac{s^2}{2}(m_q^2 + m_f^2) + m_q^2m_f^2\right]\\
+	\frac{d\sigma_{\gamma,Z}}{d\cos(\theta)} &= \frac{\pi\alpha^2Q_f^2}{s}\left[A\left(1+\cos^2(\theta)\right) + B\cos(\theta)\right]\quad,\quad \alpha = \alpha_{EM} \simeq \frac{1}{137}\\
+	\frac{d\sigma_{G}}{d\cos(\theta)} &= \frac{1}{2}\pi Q_f^2s^6|C_4|^2\left[1-3\cos^2(\theta) + 4\cos^4(\theta)\right]
+\end{align}
+
+where
+
+\begin{align}
+	\begin{split}
+	A &= 1 + 2\text{Re}(\chi)c_V^ec_V^\tau + |\chi|^2\left[\left(c_V^e\right)^2 + \left(c_A^e\right)^2\right]\left[\left(c_V^\tau\right)^2 + \left(c_A^\tau\right)^2\right]\\
+	B &= 4\text{Re}(\chi)c_A^ec_A^\tau + 8|\chi|^2 c_V^ec_A^ec_V^\tau c_A^\tau
+	\end{split}
+\end{align}
+
+and $\chi = \frac{g_Z^2 P_Z s}{4e^2}$. As one is mostly interested in comparing the angular distribution of the different cases, the plots will be normalized and one does not really case about the coefficients in front. Note that the vector channel's distribution will change with CM energy. For $s\approx 9.1492\:\text{TeV}$ the coefficients are the same ($A\approx B$).
 
 \end{document}
