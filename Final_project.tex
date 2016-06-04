@@ -22,7 +22,7 @@
 \usepackage{slashed}
 \usepackage{xfrac}
 %\usepackage{tikz-feynman}
-
+\usepackage{hyperref}
 \usepackage[pass]{geometry}
 %\usepackage{graphicx}
 \usepackage{caption}
@@ -115,7 +115,7 @@
 \vfill
 
 \begin{abstract}
-	The postulated graviton will be studied in two seperate models for extra dimensions; The Randall-Sundrum (RS) model of compacted dimensions (warped), and the Arkani-Hamed, Dimopoulos, and Dvali (ADD) model of large extra dimensions. Quark-anti-quark production of the simplest possible massive graviton (1st order excitation of the Kaluza-Klein tower) will be calculated and the angular dependency will be compared with corresponding SM scalar and vector channels.
+	The postulated graviton will be studied in two seperate models for extra dimensions; The Randall-Sundrum (RS) model of compacted dimensions (warped), and the Arkani-Hamed, Dimopoulos, and Dvali (ADD) model of large extra dimensions. Quark-anti-quark production of the simplest possible massive graviton (1st order excitation of the Kaluza-Klein tower) will be calculated and the angular distribution will be compared with corresponding SM scalar and vector channels. The paper will mostly follow the dr. scient. thesis of E.W. Dvergsnes \cite{Dvergsnes}.
 \end{abstract}
 
 \vfill
@@ -134,28 +134,55 @@
 \fancyfoot[C]{\thepage}
 
 \section{Introduction}
-Higher dimensions, also called extra dimensions, are physical models for the dimensionality of our universe, mostly suggested with the goal of explaining the hierarchy problem of the standard model. There are \emph{many} theories for higher dimensions. The most recognised are:
+Higher dimensions, also called extra dimensions, are theoretical models for the dimensionality of our universe, mostly suggested with the purpose of explaining the hierarchy problem of the standard model. There are \emph{many} theories for higher dimensions. The most recognised are:
 \begin{itemize}
-	\item \emph{Large extra dimensions}: The often-heard theory that gravity acts through several dimensions, therefore becoming weaker. It originates from the ADD model as an attempt to solve the hierarchy problem\footnote{The "hierarchy problem" is the problem in explaining why gravity and the weak force are so weak compared to QED and QCD.}.
+	\item \emph{Large extra dimensions}: The often-heard theory that gravity acts through several dimensions, therefore becoming weaker. The "large" phrase is due to the dimension being finite, yet large compared to particle interactions. It originates from the ADD model as an attempt to solve the hierarchy problem\footnote{The "hierarchy problem" is the problem in explaining why vast discrepancies "pop-up" in the standard model. For example, why gravity and the weak force are so weak compared to QED and QCD.}.
 	\item \emph{Warped extra dimensions}: Describing our universe as a five-dimensional anti-de Sitter space, and claiming the SM particles are localized on a (3 + 1)-dimensional brane(s).
-	\item \emph{Universal extra dimensions}: All particles move universally through the extra dimensions, unlike to two other models where only gravity propagates through them.
+	\item \emph{Universal extra dimensions}: All particles move universally through the extra dimensions, unlike the two other models where only gravity propagates through them.
 \end{itemize}
 
 Obviously, a thorough description of any of these models is near impossible for such a small paper, let alone all the models together. Therefore, a brief outline of the theory behind the two currently most promising\footnote{"Promising" in the sense that they provide measurable outcomes, and fit very well with what we already know from the standard model. The problem is that so far they have predicted nothing. Finding a graviton would possibly confirm either theory.} models will be given.\\
-The first is the large extra dimension model by Arkani-Hamed, Dimopoulos, and Dvali. Originally, it was proposed as a model to explain the hierarchy problem (why the weak force is $10^{32}$ times stronger than gravity, among other problems). The extra dimensions\footnote{Today, 6 dimensions is the most common expansion.} are then suggested as planes into which gravity, assumed just as strong as the other forces, spreads. Therefore gravity becomes "diluted", while the known SM particles stay in (1,3)-spacetime.\\
-The second model is the warped extra dimension model by Randall and Sundrum, made due to disliking the current universal extra dimensions models. They assumed that, rather than having universal extra dimensions in which all particles propagate,  there is a small extra dimension. This means they model our world as a 5-dimensional anti-de Sitter space\footnote{This will be explained later on.}. By small, it means the extra dimension has a large curvature, or is \emph{warped}. From general relativity, gravity and curvature are very much the same thing, and therefore the extra dimension, called the Planckbrane, can easily host gravitons.\\
-A question that then springs to mind is why exactly gravitons and extra dimensions are connected (other than gravitons "carrying" gravity). If the standard model is expanded, but without inclusion of extra dimensions, to include a graviton field, then measuring it would be, at best, very optimistic\footnote{Refer to "Can Gravitons be Detected?" by Rothman and Boughn (https://arxiv.org/pdf/gr-qc/0601043v3.pdf) for an impression of the problem.}.
-Should any extra dimensional model be true, it would certainly be desirable to prove it by measurement. Finding a particle with the properties of the graviton would mean that at least \emph{some} extra dimensions model is true.
+The first is the large extra dimension model by Arkani-Hamed, Dimopoulos, and Dvali. Originally, it was proposed as a model to explain the hierarchy problem (why the weak force is $10^{32}$ times stronger than gravity). The extra dimensions are then suggested as planes into which gravity, assumed just as strong as the other forces, spreads. Therefore gravity becomes "diluted", while the known SM particles stay in (1,3)-spacetime.\\
+The second model is the warped extra dimension model by Randall and Sundrum, proposed since they were dissatisfied with the current universal extra dimensions models. They assumed that, rather than having universal extra dimensions in which all particles propagate,  there is a small extra dimension. They modelled our world as a "brane" in a 5-dimensional anti-de Sitter space\footnote{This will be explained later on.}. By small, it means the extra dimension has a large curvature, or is \emph{warped}. Our brane is connected to another by a intermediate circle space, through which only gravity may propagate.\\
+A question that then springs to mind is why exactly gravitons and extra dimensions are connected (other than gravitons "carrying" gravity). If the standard model is expanded, but without inclusion of extra dimensions, to include a graviton field, then measuring it would be impossible\footnote{Refer to "Can Gravitons be Detected?" by Rothman and Boughn (https://arxiv.org/pdf/gr-qc/0601043v3.pdf) for an impression of the problem.}.
+However, with extra dimensions, one can perform a Fourier expansion to get a  so-called Kaluza-Klein tower whose terms would be gravitons. The lowest-order (mass) gravitons will couple to SM particles at energies well within the reach of today's particle accelerators.\\
+To know how a graviton signal would look in a detector, a detailed calculation of the quark-anti-quark annihilation into a dilepton jet by the graviton channel will be calculated. This will then be compared to the similar SM scalar (Higgs) and vector ($Z,\gamma$) channels.
 
+\newpage
 \section{Kaluza-Klein theory}
-The reason Kaluza-Klein theory is discussed is because one requires knowledge of the so-called "Kaluza-Klein towers"; massive excitations of an expansion model\footnote{This expansion depends on the model, and is where RS and ADD differ.} of the spacetime metric. While RS1 only considers a single extra dimension, ADD works for different numbers of dimensions. However, for the sake of simplicity, and comparison, only one extra dimension will be considered.\\
-Before adding extra dimensions, the question of how get so-called "massive gravity"; a massive field carries the gravitational force. First, one starts with linearised gravity. Problems in general relativity can be approximated by perturbing Minkowski spacetime;
+The reason Kaluza-Klein theory is discussed is because one requires knowledge of the Kaluza-Klein tower; massive excitations of an expansion model\footnote{This expansion depends on the model, and is where RS and ADD differ.} of the spacetime metric. While RS1 only considers a single extra dimension, ADD works for any number of dimensions. However, for the sake of simplicity, only one extra dimension will be considered in this section.\\
+
+\subsection{Spin-2 gravity}
+One often says that the graviton is a spin-2 particle, but it would perhaps be interesting to know why this is the consensus.\\
+In linear gravity, the Minkowski metric is expanded on by an additional term $h_{\mu\nu}$\footnote{This modest assumption is, funnily enough, precisely where all physics concerning gravitons start.} such that
 
 \begin{equation}
 	g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}
+	\label{eq:linGrav}
 \end{equation}
 
-where $g_{\mu\nu}$ is the approximated spacetime metric, $\eta_{\mu\nu}$ is the Minkowski metric, and $h_{\mu\nu}$ is the perturbation, and is what eventually was suggested to be gravitons. The Lagrangian density will then have a interactive term on the form $h_{\mu\nu}T^{\mu\nu}$, and a kinetic term for $h_ {\mu\nu}$. The field $h_{\mu\nu}$ can be given mass by saying the Lagrangian density also has a term $ah_{\mu\nu}h^{\mu\nu} + b(\eta_{\mu\nu}h^{\mu\nu})^2$. Markus Fierz and Wolfgang Pauli then, in 1939, wrote an article\footnote{Fierz, Markus; Pauli, Wolfgang (1939). "On relativistic wave equations for particles of arbitrary spin in an electromagnetic field". Proc. Roy. Soc. Lond. A173: 211–232.} in which they proved that $a=-b$ in order to avoid unphysical results. The result is the Fierz-Pauli Lagrangian for massive gravity\footnote{Note that this is \emph{not} the only way to get a massive gravity Lagrangian, and it has some problems as well. It serves well as an introductory example, however.} [SOURCE]:
+While avoiding the technical details here, the Einstein field equations can be used to find the solution
+
+\begin{equation}
+	h_{\mu\nu} = C_{\mu\nu}e^{ik_\sigma a^\sigma}
+\end{equation}
+
+which resembles a plane wave equation. In the $x_3$-direction, one has:
+
+\begin{equation}
+	C_{\mu\nu} = \begin{pmatrix}
+	0 & 0 & 0 & 0\\
+	0 & C_{11} & C_{12} & 0\\
+	0 & C_{12} & C_{11} & 0\\
+	0 & 0 & 0 & 0
+	\end{pmatrix}
+\end{equation}
+
+Adopting the notation $C_{11} = h_+$ and $C_{12} = h_{\times}$ and defining $h_{L,R} = \frac{h_+ \pm h_\times}{\sqrt{2}}$, one can rotate the matrix and find the fields $h_R$ $h_L$ transform as $h_{R,L} \rightarrow h_{R,L}e^{ia\theta}$. Since gravity is massless, chirality is the same as helicity. With $a$ as helcity, the fields are then seen to transform as spin-2 fields.
+
+\subsection{Kaluza-Klein towers}
+
+Before adding extra dimensions, the question of how get so-called "massive gravity"; a massive field carries the gravitational force. First, one starts with linearised gravity, i.e. equation \ref{eq:linGrav}. The Lagrangian density will then have a interactive term on the form $h_{\mu\nu}T^{\mu\nu}$, and a kinetic term for $h_ {\mu\nu}$. The field $h_{\mu\nu}$ can be given mass by saying the Lagrangian density also has a term $ah_{\mu\nu}h^{\mu\nu} + b(\eta_{\mu\nu}h^{\mu\nu})^2$. Markus Fierz and Wolfgang Pauli then, in 1939, wrote an article\cite{FP} in which they proved that $a=-b$ in order to avoid unphysical results. The result is the Fierz-Pauli Lagrangian for massive gravity\footnote{Note that this is \emph{not} the only way to get a massive gravity Lagrangian, and it has some problems as well. It serves well as an introductory example, however.} \cite{HLZ}:
 
 \begin{equation}
 	\frac{1}{\kappa^2}\sqrt{|g|}R = \frac{1}{4}\left( \partial^\mu h^{\nu\rho}\partial_\mu h_{\nu\rho} - \partial^\mu h^{\nu}_{\nu}\partial_\mu h^\rho_{\rho} - 2\partial^\nu h_{\nu\mu}\partial_\rho h^{\rho\mu} + 2\partial_\nu h^{\nu\mu}\partial_\mu h^{\rho}_{\rho} \right) + \mathcal{O}(\kappa)
@@ -172,7 +199,7 @@ Now, additional spatial dimensions may be added. These dimensions will not chang
 	\end{pmatrix}
 \end{equation}
 
-where $V_d$ is the volume of the compactified space, $\eta_{\mu\nu}\phi$ is a Weyl rescaling and $A_{\mu i}$ is some tensor field. Since the fields are compact, one can claim periodicity of the field, such that a Fourier expansions is possible:
+where $V_d$ is the volume of the compactified space, $\eta_{\mu\nu}\phi$ is a Weyl rescaling and $A_{\mu i}$ is some tensor field. In most phenomenological papers, one simply uses that $V_d\propto R^d$, where $R$ is the "characteristic size" of the extra space. Since the fields are compact, one can claim periodicity of the field, such that a Fourier expansions is possible:
 
 \begin{equation}
 	h_{\mu\nu}(x,y) = \sum_{\substack{n=\{n_1,n_2,\ldots,n_5\}; \\ n_i\in\mathbb{Z}\:\forall\:i}} h_{n,\mu\nu}(x)Y_n(y)
@@ -181,13 +208,14 @@ where $V_d$ is the volume of the compactified space, $\eta_{\mu\nu}\phi$ is a We
 where $Y_n(y)$ are orthogonal, normalized eigenfuntions of the Laplace operator on the internal space\footnote{The extra dimension/space, denoted $K_d$.}:
 
 \begin{equation}
-\Delta_{K_d}Y_n(\theta) = \frac{\lambda_n}{R^2}Y_n(\theta)
+\Delta_{K_d}Y_n(y) = \frac{\lambda_n}{R^2}Y_n(y)
 \end{equation}
 
-where $R$ is the "characteristic size" of the space $K_d$ (tied to the volume $V_d$). The exact form of $Y_n(y)$ depends on the structure and size of the new dimension. This series expansion is called the Kalulza-Klein (KK) tower of modes, and one value of $n$ is called mode $n$, and the corresponding term the $n$'th excitation. The field $h_{\mu\nu}(x,y)$ has to satisfy the d'Alembert equation, and in doing this one finds it necessary to redefine the fields $h_{\mu\nu}(x,y)$, $A_{\nu j}$, and $\phi_{ij}$, to $\tilde{h}_{n,\mu\nu}$, $\tilde{A}_{n,\mu i}$, and $\tilde{\phi}_{n,ij}$. The detailed steps are omitted, as they are many and non-intuitive. These new fields, when put into the Lagrangian, will give mass eigenstates. This redefinition of fields can be thought of as an analogue to the rotations from the CKM matrix in QCD theory (needed for mass eigenstates in the Lagrangian), but it is not the same (not a rotation). From the equation of motion one can go one to show that the masses are:
+This is only true for spaces without internal structure. In the case of RS1, $Y_n$ will need to fulfil another equation. The exact form of $Y_n(y)$ depends on the structure and size of the new dimension. This series expansion is called the Kalulza-Klein (KK) tower of modes, and one value of $n$ is called mode $n$, and the corresponding term the $n$'th excitation. The field $h_{\mu\nu}(x,y)$ has to satisfy the d'Alembert equation, and in doing this one finds it necessary to redefine the fields $h_{\mu\nu}(x,y)$, $A_{\nu j}$, and $\phi_{ij}$, to $\tilde{h}_{n,\mu\nu}$, $\tilde{A}_{n,\mu i}$, and $\tilde{\phi}_{n,ij}$. The detailed steps are omitted, as they are many and non-intuitive. These new fields, when put into the Lagrangian, will give mass eigenstates. It can help memory to think of this redefinition of fields as an analogue to the rotations from the CKM matrix in QCD theory (needed for mass eigenstates in the Lagrangian), but it is not the same (not a rotation). From the equation of motion one can go one to show that the masses are:
 
 \begin{equation}
 	m_n^2 = \frac{4\pi^2 n^2}{R^2}
+	\label{eq:KK_masses}
 \end{equation}
 
 %%%
@@ -268,19 +296,21 @@ where
 \end{equation}
 
 With the principles of the KK tower and massive gravity, one can start to consider theories that are based on extra dimensions.\\
-As is the point with Feynman diagrams, Feynman rules for the graviton would help do calculations. The propagator of massive, spin-2 KK excitations are given by the Fierz-Pauli equation of motion (see reference BLADIBLA), and is
+As is the point with Feynman diagrams, Feynman rules for the graviton would help do calculations. Only the rules necessary for the process mentioned in the introduction will be mentioned. The propagator of massive, spin-2 KK excitations are given by the Fierz-Pauli equation of motion \cite{HLZ}, and is
 
 \begin{equation}
 	G_n^{\mu\nu\rho\sigma} = i\frac{\eta^{\mu\rho}\eta^{\nu\sigma} + \eta^{\mu\sigma}\eta^{\nu\rho} - \frac{2}{3}\eta^{\mu\nu}\eta^{\rho\sigma}}{k_G^2 - m_n^2 + i\epsilon}
 	\label{eq:Gprop}
 \end{equation}
 
-The vertex factors with different fields (scalar, spinor, vector-boson) are found by inserting the conserved energy-momentum tensor, for said field, into the Lagrangian, except for the spinor-field. Spinor-graviton couplings, which will be of interest later on, must be found by using the vierbein formalism\footnote{A way with which to rewrite the spacetime metric. The details of this are many and unnecessary for purpose of this paper.}. The massive spinor-graviton spin-2 coupling is
+The vertex factors with different fields (scalar, spinor, vector-boson) are found by inserting the conserved energy-momentum tensor, for said field, into the Lagrangian, except for the spinor-field. Spinor-graviton couplings, which will be of interest later on, must be found by using the vierbein formalism\footnote{A way with which to rewrite the spacetime metric.}. See \cite{HLZ}, page 10, for a more in-depth discussion. The massive spinor-graviton spin-2 coupling is
 
 \begin{equation}
 	-\frac{i\kappa}{8}\left[\gamma_\mu(k_1 + k_2)_ \nu + \gamma_\nu(k_1+k_2)_\mu - 2\eta_{\mu\nu}(\slashed k_1 + \slashed k_2 - 2m_f)\right]
 	\label{eq:Gcoupling}
 \end{equation}
+
+where momentum follows the fermion lines. 
 
 \section{The Arkani-Hamed-Dimopoulos-Dvali model}
 The ADD model is mainly based on 3 features:
@@ -291,13 +321,13 @@ The ADD model is mainly based on 3 features:
 	\item The SM degrees of freedom are localized on a 3D-brane, stretching along 3 non-compact spatial dimensions (i.e. the SM particles move in normal spacetime, not in the new dimension(s)).
 \end{itemize}
 
-The idea is that the electroweak scale is the only fundamental scale in the universe, and that the true Planck scale is actually of the same order. from the reduction formula, one could introduce $d$ new spatial dimensions and find their size, i.e.
+The idea is that the electroweak scale is the only fundamental scale in the universe, and that the true Planck scale is actually of the same order. From the reduction formula, one could introduce $d$ new spatial dimensions and find their size, i.e.
 
 \begin{equation}
 	\frac{M_{Pl}^2}{M^{d+2}} = V_d \sim R^d	\quad,\quad \mathcal{O}(M^{d+2}) = \mathcal{O}(m_{EW})
 \end{equation}
 
-where $R$ is the compactification radius as before. With new dimensions, Newton's law for gravitational force would instead be proportional to $r^{-(d+2)}$, which is of course not true. However, since the extra dimensions are compact, only objects with distances less $r<<R$ feel this new force, while it still goes as $r^{-2}$ for $r>>R$. Therefore, for $d=1$, the radius is of the same order as the earth-moon distance, and therefore $d$ can't be equal one. $d=2$ is not possible either. For $d>2$, the radius is so small that van der Waal forces prevent us from conducting "table-top" experiments, and is where particle physics experiments at CERN become relevant. If ADD is true, then it should be possible to determine the radius by measuring the graviton, which is a direct consequence of extra dimensions. Since the mass $m_n$ is inversely proportional to the size, it would be possible to determine the new Planck scale.
+where $R$ is the compactification radius as before. With new dimensions, Newton's law for gravitational force would instead be proportional to $r^{-(d+2)}$, which is of course not true. However, since the extra dimensions are compact, only objects with distances $r<<R$ feel this new force, while it still goes as $r^{-2}$ for $r>>R$. Therefore, if $d=1$, the radius is of the same order as the earth-moon distance, which greatly violates measurements. $d=2$ should not be possible either, as the radius is then at the order of 0.1 mm and 4 dimensional gravitational effects have been measured to fit at that scale. For $d>2$, the radius is so small that van der Waal forces prevent us from conducting "table-top" experiments, and is where particle physics experiments at CERN become relevant. If ADD is true, then it should be possible to determine the radius by measuring the graviton, which is a direct consequence of extra dimensions. Since the mass $m_n$ is inversely proportional to the size (equation \ref{eq:KK_masses}), it would be possible to determine the new Planck scale.
 
 %In the ADD model, the standard metric is expanded upon by introducing a field $\hat{h}_{ab}(x,\theta)$ such that:
 %
@@ -305,12 +335,11 @@ where $R$ is the compactification radius as before. With new dimensions, Newton'
 %	\tilde{g}_{ab}(x,\theta) = \eta_{ab} + \frac{2}{M^{1+d/2}}\hat{h}_{ab}(x,\theta)
 %\end{equation}
 
-A problem with the massive KK spin-2 propagator is that there are infinitely many KK excitations, each with its own mass. When calculating a Feynman diagram, one has to, in principle, perform a sum over all modes, as one can't know which mode will appear.\\
-In the ADD model, the masses are \emph{very} small, due to the size of $R$ by the reduction formula and the size of $M$, and evenly spaced. This means one can approximate the sum by an integral over the modes ($n$).
+A problem with the massive KK spin-2 propagator is that there are infinitely many KK excitations, each with its own mass. When calculating a Feynman diagram, one has to, in principle, perform a sum over all modes, as they are all possible, usually with decreasing probability. In the ADD model, the difference in masses are \emph{very} small due to the size of $R$ by the reduction formula, and evenly spaced. This means one can approximate the sum by an integral over the modes ($n$). While not too hard, the proof will not be shown, but is clearly presented in Dvergsnes' thesis. The result is presented in the appendix.
 
 \section{The Randall-Sundrum model}
 \subsection{The hierarchy problem in RS1}
-The RS model assumes that there are two points on the $S^1/\mathbb{Z}^2$ ordibfold in which 3-branes are compactified. What this means is that there are two 3-dimensional, non-compact branes that are connected at every point by a "circle", see figure SOME FIG.\\
+The RS model assumes that there are two points on the $S^1/\mathbb{Z}^2$ ordibfold in which 3-branes are compactified. What this means is that there are two 3-dimensional, non-compact branes that are connected at every point by a "circle".
 
 %\begin{center}
 %	\begin{tikzpicture}
@@ -363,7 +392,7 @@ Since the metric in RS1 is a bit different from that used in the KK mode expansi
 	ds^2 = e^{-2k|y|}(\eta_{\mu\nu} + \tilde{h}_{\mu\nu}(x,y))dx^\mu dx^\nu + (1+\phi(x))dy^2
 \end{equation}
 
-However, this means there will be cross-terms ($\phi \tilde{h}_{\mu\nu}$-terms) in the Lagrangian that prevent mass eigenstates. It can be shown\footnote{See \text{http://arxiv.org/abs/hep-th/0105304v3}, section 2, for a rigorous derivation.} that it can be diagonalized. One will end up with two fields, $h_{\mu\nu}$ and $\varphi$, which will be used hereafter.\\
+However, this means there will be cross-terms ($\phi \tilde{h}_{\mu\nu}$-terms) in the Lagrangian that prevent mass eigenstates. It can be shown\cite{BKSV} that it can be diagonalized. One will end up with two fields, $h_{\mu\nu}$ and $\varphi$, which will be used hereafter.\\
 Then, a KK mode expansion is done on $h_{\mu\nu}(x,y)$, giving
 
 \begin{equation}
@@ -397,8 +426,10 @@ With a working theory for the RS1 model, one would like to do calculations. Spec
 	\kappa = \sqrt{2}\frac{\beta_1}{m_1}\frac{k}{M_{Pl}}
 \end{equation}
 
-As one sees, the RS1 model is completely determined by the $m_1$ mass and the factor $\frac{k}{M_{Pl}}$, which is believed to lie between $0.01$ and $0.1$\footnote{See H. Davoudiasl, J.L Hewett and T. G. Rizzo, Phys. Rev. Lett. $\bm{84}$, 3370 (1999) [arXiv:hep-ph/9905221]}.
+As one sees, the RS1 model is completely determined by the $m_1$ mass and the factor $\frac{k}{M_{Pl}}$, which is believed to lie between $0.01$ and $0.1$\cite{DHR}.
 
+\section{Graviton production at the LHC}
+With a couple of theories well at hand, it would be interesting to know how they should appear in a particle collider such as the LHC. A quark-anti-quark annihilation in proton-proton collisions can produce a graviton as gravitons and fermion couple. Furthermore, this graviton can then decay to a lepton-pair, such as muons. Obviously there are many channels that give off a dimuon final state. However, there are no spin-2 particles in the standard model, and measuring the angular distribution would be expected to give a characteristic contour. One example of angular distribution is the differential cross section. Here, the angular dependency would be interesting to study and compare to the corresponding scalar and vector channels ($H$ and $\gamma,Z$), the two of which have already been studied in previous projects.
 
 \begin{figure}[H]
 	\centering
@@ -407,11 +438,8 @@ As one sees, the RS1 model is completely determined by the $m_1$ mass and the fa
 	\label{fig:gravitonChannel}
 \end{figure}
 
-\section{Graviton production at the LHC}
-With a couple of theories well at hand, it would be interesting to know how they should appear in a particle collider such as the LHC. A quark-anti-quark annihilation in proton-proton collisions can produce a graviton as gravitons and fermion couple. Furthermore, this graviton can then decay to a lepton-pair, such as muons. Obviously there are many channels that give off a dimuon final state. However, there are no spin-2 particles in the standard model, and measuring the angular distribution would be expected to give a characteristic contour. One example of angular distribution is the differential cross section. Here, the angular dependency would be interesting to study and compare to the corresponding scalar and vector channels ($H$ and $\gamma,Z$), the two of which have already been studied in previous projects.
-
 \subsection{SM backgrounds}
-The spin-averaged amplitude for $e^+e^- \rightarrow \tau^+\tau^-$ in the electroweak channel was then found. The formula is quite general for all fermions in the high $s$ limit, in in the current case will be:
+The spin-averaged amplitude for $e^+e^- \rightarrow \tau^+\tau^-$ in the electroweak channel was in project 2. The formula is quite general for all fermions in the high $s$ limit, and for the current case is:
 
 \begin{equation}
 	\langle|\mathcal{M}(q\bar{q}\rightarrow l^+l^-)|^2\rangle = Q_f^2\left(A'\left(1+\cos^2(\theta)\right) + B'\cos(\theta)\right)
@@ -443,12 +471,13 @@ Furthermore, the corresponding Higgs channel is given by:
 where $v=246\:\text{GeV}$ is the vacuum expectation value of the Higgs field. As one would expect, there is no angular dependency for a scalar field.
 
 \subsection{Angular distributions}
+In appendix A, a more thorough calculation of the matrix element is performed. Note that one does not consider the more realistic with parton distribution functions. The calculation is mainly just to get an impression of how massive gravitons would behave.
 Below are the differential cross-sections for the scalar, vector and tensor channels for $q\bar{q}\:\rightarrow\:l^+l^-$, where in the last case the masses have been neglected. As one can see, each case differs greatly from others.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{angDist.pdf}
-	\caption{Normalized angular distributions for different channels, taken from http://arxiv.org/pdf/hep-ph/0006114.pdf.}
+	\caption{Normalized angular distributions for different channels (except for the scalar case, which was intentionally moved to 0.5). The curve fits nicely with the one shown in \cite{AOPW}.}
 	\label{fig:1a}
 \end{figure}
 
@@ -457,11 +486,48 @@ This plot is interesting not only in the sense that it shows a clear way with wh
 \begin{itemize}
 	\item Spin-0: Shows no favoured angle.
 	\item Spin-1: High probability of products moving orthogonally to particle beams. High $p_T$ physics fits well here.
-	\item Spin-2: Fairly high probability for transverse movement, but favours angles around $\theta \in$. Little chance for parallel movement.
+	\item Spin-2: Fairly high probability for pure transverse movement, but favours angles around $-\pi$ and $\pi$ to the collision axis. Little chance for parallel movement.
 \end{itemize}
 
-\section{Conclusions}
+As one can see, the spin-2 case differs greatly from the scalar and vector cases. Of course, the graphs above will be for different energies, as the different channels becomes favourable at different energies. However, since there are other beyond-the-standard-model models, the cross-section suppression of the scalar and vector channels do not mean a high-energy resonance signifies a graviton. For example, a $Z'$-boson could be found, or a new Higgs. This is why the angular distribution and spin identification is important.
 
+\subsection{Searches at the LHC}
+At the LHC, there are different channels studied for different models. In the ADD model, the most promising are \cite{K}:
+
+\begin{align*}
+	pp\:&\rightarrow\:(\text{jet + missing E})\\
+	q\bar{q} \:&\rightarrow\: gG^{(n)}\\
+	gg\:&\rightarrow\: gG^{(n)}
+\end{align*}
+
+While a bit difficult to find current numbers, in 2008 the lower bound on ADD was found, at LHC, to be
+
+\begin{align*}
+	d \quad & \quad M [\text{TeV}]\\
+	2 \quad & \quad 4.0-7.5\\
+	3 \quad & \quad 4.5-5.9\\
+	4 \quad & \quad 5.0-5.3\\
+\end{align*}
+
+with no restraints for higher dimensions.\\
+In the RS1 model, there's:
+
+\begin{align*}
+	q\bar{q}\:\rightarrow\:& G^{(1)}\:\rightarrow\:l^+l^-\\
+	gg \:\rightarrow\:& G^{(1)} \:\rightarrow\: l^+l^-\\
+	q\bar{q},gg \:\rightarrow\:& G^{(1)} \:\rightarrow\: q\bar{q},gg
+\end{align*}
+
+The lower bound on $M_1$ in the RS1 model was found to be at 2080 GeV.\\
+
+Although hadron colliders are "noisy", they can do a lot for extra dimensions searches. The energies needed, as is seen here, are high. Given the spin-2 particle having such a effect on angular distributions, the signal should nonetheless be characteristic once found.
+
+\newpage
+
+\section{Conclusions}
+Starting with the simple assumption of an extra dimension, one explained how to, rather simply, expand linear gravity. This then allowed for the mode expansion leading to the Kaluza-Klein tower, which permits massive gravitons to exist. Then, both the idea and workings of the RS1 and ADD models were discussed. These models allow for KK gravitons, but predict different masses, have different interpretations of graviton/gravitional movement, and different SM couplings. The Feynman rules for KK gravitons, however, fitted for both models, except with the linear gravity expansion variable $\kappa$ differing between models.\\
+
+While RS1 only requires one extra dimension of complex structure, the ADD allows several. This, in turn, means searches at particle colliders need to deal with several points at once, i.e. which number of extra dimensions and the lower bound the data put on these. Additionally, the size is also adjustable, providing a great many possibilities. In common, however, are is the angular distribution, as shown with the Drell-Yang process $q\bar{q}\:\rightarrow\:G\:\rightarrow\:l^+l^-$, as has been calculated. It allows for a distinct signal which will distinguish the graviton from similar vector-boson and Higgs particles form beyond the standard model theories.\\
 
 \appendix
 \section{Calculations}
@@ -582,7 +648,7 @@ where $\theta$ is the angle between $\bm{k}_1$ and $\bm{q}_1$ in the centre of m
 	\langle|\mathcal{M}|^2\rangle = 64Q_f^2\pi^2|C_4|^2 \left(\frac{s}{2}\right)^8\left[1-3\cos^2(\theta) + 4\cos^4(\theta)\right]
 \end{equation}
 
-which is precisely the result gotten reference http://arxiv.org/pdf/hep-ph/0006114.pdf\\
+which is precisely the result gotten reference %http://arxiv.org/pdf/hep-ph/0006114.pdf\\
 
 The differential cross section for two-body collision (particle $A$ and $B$) process is
 
@@ -608,5 +674,26 @@ where
 \end{align}
 
 and $\chi = \frac{g_Z^2 P_Z s}{4e^2}$. As one is mostly interested in comparing the angular distribution of the different cases, the plots will be normalized and one does not really case about the coefficients in front. Note that the vector channel's distribution will change with CM energy. For $s\approx 9.1492\:\text{TeV}$ the coefficients are the same ($A\approx B$).
+
+
+\begin{thebibliography}{9}
+	\bibitem{Dvergsnes}
+	E.W. Dvergsnes, \href{http://bora.uib.no/bitstream/handle/1956/847/THESIS.pdf?sequence=1}{"\emph{Extra Dimensions at Particle Colliders}"}, 2004, UiB
+	\bibitem{HLZ}
+	T. Han, J.D. Lykken, and R.-J. Zhang,
+	\href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.59.105006}{\emph{Phys. Rev.} {\bfseries D 59} (1999) 105006}, doi:10.1103/PhysRevD.59.105006 \href{http://xxx.lanl.gov/abs/hep-ph/9811350v4}{hep-ph/9811350v4}
+	\bibitem{AOPW}
+	B.C. Allanach, K. Odagiri, M.A. Parker, and B.R. Webber,
+	\href{http://iopscience.iop.org/article/10.1088/1126-6708/2000/09/019/meta;jsessionid=8B906F8B155A00E75050CBB02B18326C.c4.iopscience.cld.iop.org}{JHEP 0009:019,2000}, doi:10.1088/1126-6708/2000/09/019, \href{http://arxiv.org/abs/hep-ph/0006114v2}{hep-ph/0006114v2}
+	\bibitem{FP}
+	M. Fierz, P. Wolfgang, \href{http://rspa.royalsocietypublishing.org/content/173/953/211}{Proc. Roy. Soc. Lond. A173: 211–232}, doi: 10.1098/rspa.1939.0140
+	\bibitem{BKSV}
+	E.E. Boos, Y.A. Kubyshin, M.N. Smolyakov, and I.P. Volobuev, NPI MSU 2001-21/661, \href{http://arxiv.org/abs/hep-th/0105304}{hep-th/0105304}
+	\bibitem{DHR}
+	H. Davoudiasl, J.L Hewett, and T. G. Rizzo, \href{http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.84.2080}{Phys. Rev. Lett. $\bm{84}$ 3370 (1999)}, doi:10.1103/PhysRevLett.84.2080, \href{http://arxiv.org/pdf/hep-ph/9911262v2.pdf}{hep-ph/9911262v2}
+	\bibitem{K}
+	Y.A. Kubyshin, (2001), \href{http://arxiv.org/abs/hep-ph/0111027v2}{hep-ph/0111027v2}
+\end{thebibliography}
+
 
 \end{document}
