@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.27)  6 JUN 2016 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.1.27)  6 JUN 2016 21:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **Presentation.tex
 (./Presentation.tex
-LaTeX2e <2014/05/01>
+LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasercs.sty
-Package: beamerbasercs 2013/12/25 (rcs-revision 31cc758a62ae)
+Package: beamerbasercs 2015/03/08 (rcs-revision 368aa9ba9d38)
 )
-Document Class: beamer 2013/12/02 3.33 A class for typesetting presentations (r
-cs-revision 332bfd3ce558)
+Document Class: beamer 2015/01/05 3.36 A class for typesetting presentations (r
+cs-revision 8a39122e1f63)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
 Package: beamerbasemodes 2013/09/03 (rcs-revision 768f2d98ca64)
 \beamer@tempbox=\box26
@@ -77,7 +77,7 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: beamerbaseoptions 2013/03/10 (rcs-revision 47431932db0d)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 ))
 \beamer@paperwidth=\skip42
@@ -111,10 +111,10 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -122,7 +122,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -472,7 +472,7 @@ Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
 Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasefont.sty
-Package: beamerbasefont 2013/10/18  (rcs-revision 72f39e01808a)
+Package: beamerbasefont 2015/01/05  (rcs-revision b4b4bee242e2)
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -517,7 +517,7 @@ Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
 \c@subsubsection=\count132
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
-Package: beamerbaseframe 2013/10/02  (rcs-revision cdc8e9a3aaac)
+Package: beamerbaseframe 2014/02/20  (rcs-revision 4b8ceeeff434)
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
 \beamer@zoombox=\box42
@@ -534,7 +534,7 @@ Package: beamerbaseframe 2013/10/02  (rcs-revision cdc8e9a3aaac)
 \c@framenumber=\count136
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
-Package: beamerbaseverbatim 2012/08/30  (rcs-revision dfdb135076b3)
+Package: beamerbaseverbatim 2015/01/05  (rcs-revision 431510bb5890)
 \beamer@verbatimfileout=\write4
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
@@ -550,21 +550,21 @@ Package: beamerbaseframecomponents 2013/10/18  (rcs-revision 5cf6c5555a45)
 \beamer@footins=\box44
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecolor.sty
-Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
+Package: beamerbasecolor 2015/02/21  (rcs-revision d944b04ee2d5)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
 Package: beamerbasenotes 2012/12/19  (rcs-revision 1686da3db3c9)
 \beamer@frameboxcopy=\box45
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetoc.sty
-Package: beamerbasetoc 2013/05/23  (rcs-revision 0fdf5bc43be8)
+Package: beamerbasetoc 2015/03/08  (rcs-revision 7270298bbaae)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
 Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
 \beamer@sbttoks=\toks30
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
-Package: beamerbaseauxtemplates 2013/09/04  (rcs-revision 4ac715c499d0)
+Package: beamerbaseauxtemplates 2014/06/30  (rcs-revision 580088513a67)
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
 Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
@@ -581,7 +581,7 @@ Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
 \beamer@blockheadheight=\dimen175
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
-Package: beamerbaselocalstructure 2013/09/04  (rcs-revision 4ac715c499d0)
+Package: beamerbaselocalstructure 2014/09/10  (rcs-revision 393f6dcff371)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
@@ -593,7 +593,7 @@ Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
 \belowcaptionskip=\skip50
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
-Package: beamerbasenavigation 2013/10/05  (rcs-revision 62be157fe783)
+Package: beamerbasenavigation 2015/02/27  (rcs-revision 923f4bf87efa)
 \beamer@section@min@dim=\dimen176
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
@@ -658,7 +658,7 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2009/07/02 v2.20.1
+Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks37
 \thm@bodyfont=\toks38
 \thm@headfont=\toks39
@@ -688,7 +688,7 @@ Package: beamercolorthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemede
 fault.sty
-Package: beamerinnerthemedefault 2013/10/15  (rcs-revision 65cb471f9634)
+Package: beamerinnerthemedefault 2014/06/30  (rcs-revision 580088513a67)
 \beamer@dima=\dimen186
 \beamer@dimb=\dimen187
 )
@@ -700,8 +700,8 @@ Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
-LaTeX Info: Redefining \bm on input line 203.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/simplewick/simplewick.sty
 Package: simplewick 2007/11/23 v1.2a
@@ -736,7 +736,7 @@ Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 chid.sty
 Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
+Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \c@tracingmulticols=\count153
 \mult@box=\box57
 \multicol@leftmargin=\dimen192
@@ -1029,9 +1029,15 @@ Package pdftex.def Info: ../angDist.pdf used on input line 219.
 
 [13
 
- <../angDist.pdf>] [14
+ <../angDist.pdf>] <cs.png, id=475, 739.76375pt x 473.77pt>
+File: cs.png Graphic file (type png)
+ <use cs.png>
+Package pdftex.def Info: cs.png used on input line 227.
+(pdftex.def)             Requested size: 221.93083pt x 142.1321pt.
 
-] [15
+[14
+
+ <./cs.png>] [15
 
 ]
 Missing character: There is no â in font cmss10!
@@ -1040,10 +1046,10 @@ Missing character: There is no “ in font cmss10!
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 249.
+(Font)              using `OT1/cmss/bx/n' instead on input line 253.
 
 
-Overfull \vbox (2.35349pt too high) detected at line 249
+Overfull \vbox (2.35349pt too high) detected at line 253
  []
 
 [16
@@ -1058,11 +1064,11 @@ Overfull \vbox (2.35349pt too high) detected at line 249
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
 (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 255.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 255.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1073,13 +1079,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 255.
  ) 
 Here is how much of TeX's memory you used:
- 16902 strings out of 495020
- 323496 string characters out of 6181323
- 389702 words of memory out of 5000000
- 19648 multiletter control sequences out of 15000+600000
+ 16922 strings out of 495000
+ 323987 string characters out of 6181169
+ 390444 words of memory out of 5000000
+ 19687 multiletter control sequences out of 15000+600000
  16899 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,16n,51p,392b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1099,10 +1105,10 @@ mssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Presentation.pdf (16 pages, 220861 bytes).
+Output written on Presentation.pdf (16 pages, 283909 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 543 compressed objects within 6 object streams
+ 642 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
  41 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
