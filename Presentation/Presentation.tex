@@ -16,7 +16,7 @@
 	\institute{\fontfamily{Decadence}\selectfont University of Oslo}
 	\maketitle
 	
-	
+	\section{Introduction}
 	\begin{frame}
 		\frametitle{Introduction}
 		There are 3 different types of spatial extra dimensions (ED) models.
@@ -30,8 +30,11 @@
 		Randall and Sundrum (1999) proposed RS1-model\footnote{arXiv: hep-ph/9905221} (warped ED)\\
 	\end{frame}
 	
+	\section{Kaluza-Klein theory}
+	\subsection{Part 1}
 	\begin{frame}
 		\frametitle{Kaluza-Klein theory}
+		\framesubtitle{Massive gravity}
 		From linearised gravity,
 		
 		\begin{equation}
@@ -44,13 +47,15 @@
 			ah_{\mu\nu}h^{\mu\nu} + b(\eta_{\mu\nu}h^{\mu\nu})^2
 		\end{equation}
 		
-		Markus Fierz and Wolfgang Pauli (1939) showed\cite{FP} that $a=-b$ in order to avoid unphysical results. The result of this was the Fierz-Pauli Lagrangian for massive gravity.
+		Markus Fierz and Wolfgang Pauli (1939) showed\cite{FP} that $a=-b$ in order to avoid unphysical results. The result of this was the Fierz-Pauli (FP) Lagrangian for massive gravity.
 		
 	\end{frame}
 	
+	\subsection{Part 2}
 	\begin{frame}
 		\frametitle{Kaluza-Klein theory}
-		Kaluza assumed the metric could be written:
+		\framesubtitle{Kaluza-Klein towers}
+		Assumed the metric can be written:
 		
 		\begin{equation}
 			\hat{h}_{ab} = 
@@ -60,7 +65,7 @@
 			\end{pmatrix}
 		\end{equation}
 		
-		Kaluza assumed that these fields could be written as expansions, i.e.
+		A KK reduction of the FP Lagrangian can be done by assuming the fields can be written as expansions, i.e.
 		
 		\begin{equation}
 			h_{\mu\nu}(x,y) = \sum_{\substack{n=\{n_1,n_2,\ldots,n_5\}; \\ n_i\in\mathbb{Z}\:\forall\:i}} h_{n,\mu\nu}(x)Y_n(y)
@@ -75,8 +80,10 @@
 		where $m_n^2 = \frac{4\pi^2 n^2}{R^2}$.
 	\end{frame}
 	
+	\subsection{Part 3}
 	\begin{frame}
 		\frametitle{Kaluza-Klein theory}
+		\framesubtitle{Interactive Lagrangian}
 		Through some non-trivial steps, one can find a Lagrangian with mass eigenstates $\tilde{h}_{n,\mu\nu}$, $\tilde{A}_{n,\mu i}$, and $\tilde{\phi}_{n,ij}$, defined from the previous fields.\\
 		
 		From the Hilbert-Einstein action:
@@ -94,11 +101,16 @@
 			-\frac{i\kappa}{8}\left[\gamma_\mu(k_1 + k_2)_ \nu + \gamma_\nu(k_1+k_2)_\mu - 2\eta_{\mu\nu}(\slashed k_1 + \slashed k_2 - 2m_f)\right]
 		\end{equation}
 		
+		where $\kappa = \sqrt{16\pi G_N}$
+		
 	\end{frame}
 	
+	\section{ADD model}
+	\subsection{Part 1}
 	\begin{frame}
-		\frametitle{ADD-model}
-		The ADD model is mainly based on 3 features:
+		\frametitle{ADD model}
+		\framesubtitle{Theoretical basis}
+		The ADD model is mainly based on 3 assumptions:
 		
 		\begin{itemize}
 			\item There exists $d$ new spatial compact dimensions, with compactification volume $V_d$.
@@ -114,8 +126,10 @@
 		\end{equation}
 	\end{frame}
 	
+	\subsection{Part 2}
 	\begin{frame}
-		\frametitle{ADD-model}
+		\frametitle{ADD model}
+		\framesubtitle{Compact dimensions}
 		With $M_{Pl} \approx 1.22\times 10^{16}\:\text{TeV}$, one finds:
 		
 		\begin{align*}
@@ -129,9 +143,37 @@
 		But Newton's law of gravity must still hold for $r>>R$.
 	\end{frame}
 	
+	\subsection{Part 3}
 	\begin{frame}
-		\frametitle{RS1-Model}
-		RS1-model is quite different. They assumed space had $S^1/\mathbb{Z}^2$ "orbifold" structure. At two points there existed a 3-brane:
+		\frametitle{ADD model}
+		\framesubtitle{Sum over propagators}
+		Graviton masses are identical to KK mode masses: $m_n^2 = \frac{4\pi^2 n^2}{R^2}$\\
+		For $d=6$, have $R^{-1} \sim \text{MeV}$, and must sum over KK tower. We rewrite:
+		
+		\begin{equation}
+			-i\kappa^2 D(s) = \sum_{n}\frac{\kappa^2}{s-m_n^2 + i\epsilon} \:\rightarrow\: \int_0^{\inf} dm_n^2 \rho(m_n)\frac{\kappa^2}{s-m_n^2 + i\epsilon}
+		\end{equation}
+		
+		where $\rho(m_n) = \frac{R^dm_n^{d-2}}{(4\pi)^{d/2}\Gamma(d/2)}$. Solve to find 
+		\small
+		\begin{equation}
+		-i\kappa^2D(s) = -i8\pi C_4\simeq
+		\begin{cases}
+		-\frac{8\pi}{M_S^4}\ln\left(\frac{M_S^2}{s^2}\right)       & \quad \text{if } d=2\\
+		-\frac{16\pi}{(d-2)M_S^4}  & \quad \text{if } d>2\\
+		\end{cases}
+		\end{equation}
+		$M_S$ is expected to have the same magnitude as $\bar{M}$ (TeV).
+		\normalsize
+		
+	\end{frame}
+	
+	\section{RS1 model}
+	\subsection{Part 1}
+	\begin{frame}
+		\frametitle{RS1 model}
+		\framesubtitle{Theoretical basis}
+		RS1-model is quite different. They assumed space had $S^1/\mathbb{Z}^2$ "orbifold" structure\footnote{A 5-dimensional anti-de Sitter space.}. At two points there existed a 3-brane:
 		
 		\begin{figure}[H]
 			\centering
@@ -146,11 +188,12 @@
 		\end{equation}
 		
 		Due to $\mathbb{Z}^2$-symmetry, have $A(y) = A(-y) = A(|y|)$. Solving the Einstein equations let Randall and Sundrum find $A(y) = k|y|$, $k=\sqrt{\frac{-\Lambda}{24M^3}}$.
-		
 	\end{frame}
 	
+	\subsection{Part 2}
 	\begin{frame}
-		\frametitle{RS1-Model}
+		\frametitle{RS1 model}
+		\framesubtitle{KK tower in RS1}
 		The metric forces a new reduction formula:
 		\begin{equation}
 			M_{Pl}^2 = \frac{M_5^3}{k}\left[1-e^{-2kR\pi}\right]
@@ -170,9 +213,11 @@
 		\end{equation}
 	\end{frame}
 	
+	\subsection{Part 3}
 	\begin{frame}
-		\frametitle{RS1-model}
-		On TeV brane, KK mode masses are
+		\frametitle{RS1 model}
+		\framesubtitle{Differences}
+		On the TeV brane, KK mode masses are
 		\begin{equation}
 			m_n = \beta_n ke^{-kR\pi}, \quad J_1(\beta_n) = 0\:\forall\: n\in\mathbb{N}
 		\end{equation}
@@ -187,8 +232,10 @@
 		meaning RS1 is completely determined by two constants.
 	\end{frame}
 	
+	\section{Proton-proton collisions}
 	\begin{frame}
 		\frametitle{Proton-proton collisions}
+		\framesubtitle{Simplest diagram: angular distribution (1)}
 		One channel for measuring the models is through the $pp\rightarrow G\rightarrow l^+l^-$ ($q\bar{q}\rightarrow G\rightarrow l^+l^-$):
 		
 		\begin{figure}[H]
@@ -200,34 +247,155 @@
 	
 	\begin{frame}
 		\frametitle{Proton-proton collisions}
-		After a little math...
+		\framesubtitle{Simplest diagram: angular distribution (2)}
+		\tiny
+		\begin{align}
+			\begin{split}
+			i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -Q_f\sum_{n}\frac{i\kappa^2}{64}\bar{u}_q&\left[\gamma_\rho(q_1 + q_2)_\sigma + \gamma_\sigma(q_1+q_2)_\rho - 2\eta_{\rho\sigma}(\slashed q_1 + \slashed q_2 - 2m_f)\right]v_q\\
+			\times&\left[\frac{\eta^{\mu\rho}\eta^{\nu\sigma} + \eta^{\mu\sigma}\eta^{\nu\rho} - \frac{2}{3}\eta^{\mu\nu}\eta^{\rho\sigma}}{k_G^2 - m_n^2 + i\epsilon}\right]\\
+			\times\bar{v}_k&\left[\gamma_\mu(k_1 + k_2)_\nu + \gamma_\nu(k_1+k_2)_\mu - 2\eta_{\mu\nu}(\slashed k_1 + \slashed k_2 - 2m_f)\right]u_k\\
+			\vdots& \\
+			= i\mathcal{M}(q\bar{q}\:\rightarrow\:f\bar{f}) = -iQ_f\frac{\pi C_4}{2}\bar{u}_q\Big[&(q_1 + q_2)_ \mu(k_1+k_2)^\mu \gamma_\nu v_q\bar{v}_k\gamma^\nu + (\slashed k_1 + \slashed k_2)v_q\bar{v}_k(\slashed q_1 + \slashed q_2) - \frac{8}{3}m_fm_qv_q\bar{v}_k\Big]u_k
+			\end{split}
+		\end{align}
+		\normalsize
 	\end{frame}
 	
 	\begin{frame}
 		\frametitle{Proton-proton collisions}
+		\framesubtitle{Simplest diagram: angular distribution (3)}
+		Square it...
+		\tiny\begin{align}
+		\begin{split}
+		\langle|\mathcal{M}|^2\rangle = \pi^2Q_f^2|C_4|^2\Bigg\{ &2\left[(k_1+k_2)_\mu(q_1+q_2)^\mu\right]^2\bigg[ (q_1\cdot k_1)(q_2\cdot k_2) +(q_2\cdot k_1)(q_1\cdot k_2)\\
+		&\hspace{4.4cm}- 2(q_1\cdot q_2)(k_1\cdot k_2 + m_q^2) \\
+		&\hspace{4.4cm}- 2(k_1\cdot k_2)(q_1\cdot q_2 + m_l^2)\\
+		&\hspace{4.4cm} + 4(k_1\cdot k_2 + m_q^2)(q_1\cdot q_2 + m_l^2)\bigg]\\
+		&+ 2\left[(k_1+k_2)_\mu(q_1+q_2)^\mu\right](k_1+k_2)^\nu(q_1+q_2)_\sigma\\
+		&\hspace{3.6cm}\times\bigg[ (q_1\cdot k_1)q_{2,\nu}k_2^\sigma + (q_1\cdot k_2)q_{2,\nu}k_1^\sigma\\
+		&\hspace{4.4cm}+(q_2\cdot k_1)q_{1,\nu}k_2^\sigma + (q_2\cdot k_2)q_{1,\nu}k_1^\sigma\\
+		&\hspace{4.4cm} -(k_{1,\nu}k_2^\sigma + k_1^\sigma k_{2,\nu})(q_1\cdot q_2 + m_l^2)\\
+		&\hspace{4.4cm} -(q_{1,\nu}q_2^\sigma + q_1^\sigma q_{2,\nu})(k_1\cdot k_2 + m_q^2)\\
+		&\hspace{4.4cm} +g_\nu^\sigma(q_1\cdot q_2 + m_l^2)(k_1\cdot k_2 + m_q^2) \bigg]\\
+		&+\left[2(k_1+k_2)_\mu q_1^\mu (k_1+k_2)_\nu q_2^\nu - (k_1+k_2)^2(q_1\cdot q_2 + m_l^2)\right]\\
+		&+\left[2(k_1+k_2)_\mu q_1^\mu (k_1+k_2)_\nu q_2^\nu - (k_1+k_2)^2(q_1\cdot q_2 + m_l^2)\right]\\
+		&+\frac{64}{9}m_l^2m_q^2(q_1\cdot q_2 + m_l^2)(k_1\cdot k_2 + m_q^2)\Bigg\}
+		\end{split}
+		\label{eq_ffs}
+		\end{align}
+		\normalsize
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Proton-proton collisions}
+		\framesubtitle{Simplest diagram: angular distribution (4)}
+		Would like to neglect SM masses; need to know how large $q_1,q_2,k_1,k_2$ are in comparison to $m_{q,l}$.\\
+		We have $C_4 = \frac{\kappa^2}{8\pi} D(s)$ and $D(s) \equiv \sum_{n} \frac{1}{k_G^2 - m_n^2 + i\epsilon}$, so must find size of $D(s)$.\\
+		
+		Have:
+		\tiny
+		\begin{equation}
+		-i\kappa^2D_{ADD}(s) = -i8\pi C_4\simeq
+		\begin{cases}
+		-\frac{8\pi}{M_S^4}\ln\left(\frac{M_S^2}{s^2}\right)       & \quad \text{if } d=2\\
+		-\frac{16\pi}{(d-2)M_S^4}  & \quad \text{if } d>2\\
+		\end{cases}
+		\end{equation}
+		\normalsize
+		and 
+		\tiny
+		\begin{equation}
+		-i\kappa^2D_{RS}(s) = -i8\pi C_4\simeq = -\frac{i\kappa^2}{k_G^2 - m_1^2 + im_1 \Gamma_1}\quad,\quad \kappa = \sqrt{2}\frac{\beta_1}{m_1}\frac{k}{M_{Pl}} \simeq 0.1\times\sqrt{2}\frac{3.83}{m_1}
+		\end{equation}
+		\normalsize
+		
+		where $\Gamma_n = \frac{295}{96}\frac{\beta_n^2}{10\pi}m_n\left(\frac{k}{M_{Pl}}\right)^2 \:\rightarrow\: \Gamma_1 \approx 0.0111m_1$
+		
+		Assuming massless, end up with:
+		
+		\begin{equation}
+			\langle|\mathcal{M}|^2\rangle = 64Q_f^2\pi^2|C_4|^2 \left(\frac{s}{2}\right)^8\left[1-3\cos^2(\theta) + 4\cos^4(\theta)\right]
+		\end{equation}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Proton-proton collisions}
+		\framesubtitle{Simplest diagram: angular distribution (5)}
+		
+		Using
+		
+		\begin{equation}
+		\frac{d\sigma}{d\cos(\theta)} = \frac{1}{2E_A2E_B|v_A-v_B|}\frac{1}{16\pi}\frac{2|\bm{p}_1|}{E_{CM}}|\mathcal{M}_{fi}|^2
+		\end{equation}
+		
+		find
+		
 		\begin{equation}
 		\frac{d\sigma_{G}}{d\cos(\theta)} = \frac{1}{2}\pi Q_f^2s^6|C_4|^2\left[1-3\cos^2(\theta) + 4\cos^4(\theta)\right]
 		\end{equation}
 		
-		where $C_4 = \frac{\kappa^2}{8\pi} D(s)$ and $D(s) \equiv \sum_{n} \frac{1}{k_G^2 - m_n^2 + i\epsilon}$.
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.2]{../angDist.pdf}
 		\end{figure}
+	\end{frame}
+	
+	\section{Gravitons at the LHC}
+	\subsection{Part 1}
+	
+	\begin{frame}
+		\frametitle{Gravitons at the LHC}
+		\framesubtitle{Process at hadron colliders}
+		At the LHC, there are 5 possible channels for the ADD model:
+		\begin{itemize}
+			\item Indirect:
+			\begin{itemize}
+				\item $pp\:\rightarrow\: \text{jet} + \slashed E_T$
+				\item $pp\:\rightarrow\: \gamma + \slashed E_T$
+			\end{itemize}
+			\item Direct:
+			\begin{itemize}
+				\item $gg\:\rightarrow\: G \:\rightarrow\: l^+l^-$
+				\item $q\bar{q}\:\rightarrow\: G \:\rightarrow\: \gamma\gamma$
+				\item $q\bar{q}\:\rightarrow\: G \:\rightarrow\: l^+l^-$
+			\end{itemize}
+		\end{itemize}
 		
+		For the RS1 model, the gravitons have very short lifetimes. the result is mainly a dijet product, and sometimes (a few percent) dilepton. The small width gives large peaks.
+		
+	\end{frame}
+	
+	\subsection{Part 2}
+	\begin{frame}
+		\frametitle{Gravitons at the LHC}
+		\framesubtitle{2012 data from ATLAS}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.2]{graph.png}
+			\end{figure}
 	\end{frame}
 	
 	\begin{frame}
 		\frametitle{Gravitons at the LHC}
+		\framesubtitle{2012 data from ATLAS}
 		\begin{figure}[H]
 			\centering
-			\includegraphics[scale=0.3]{cs.png}
+			\includegraphics[scale=0.2]{table.png}
 		\end{figure}
 	\end{frame}
 	
+	\section{Conclusions}
 	\begin{frame}
 		\frametitle{Conclusions}
+		\begin{itemize}
+			\item What KK theory is, and "how" it provides graviton interactions.
+			\item The ADD model provides a new interpretation of the hierarchy problem.
+			\item The RS1 model solves it, giving two new free parameters.
+			\item The graviton is very unique due to spin-2.
+			\item Only lower bounds found at colliders so far.
+		\end{itemize}
 	\end{frame}
 	
 	\begin{frame}
@@ -250,6 +418,12 @@
 			\bibitem{K}
 			Y.A. Kubyshin, (2001), \href{http://arxiv.org/abs/hep-ph/0111027v2}{hep-ph/0111027v2}
 		\end{thebibliography}
+	\end{frame}
+
+	\section{}
+	\begin{frame}
+		\centering
+		Thank you
 	\end{frame}
 
 \end{document}
